@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard — CampusFind Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body data-root="../" data-page="dashboard" data-area="admin">
+  <div class="admin-shell">
+    <aside class="sidebar" id="cf-sidebar" aria-label="Admin navigation"></aside>
+
+    <main class="admin-main">
+      <div class="admin-topbar">
+        <div>
+          <p class="eyebrow" style="margin-bottom:4px">Administration</p>
+          <h1 id="admin-greeting">Dashboard</h1>
+        </div>
+        <button class="btn btn-ghost side-toggle" type="button" aria-label="Open menu">Menu</button>
+      </div>
+
+      <section aria-label="Key figures">
+        <div class="grid grid-4" style="grid-template-columns:repeat(auto-fit,minmax(145px,1fr))">
+          <div class="stat is-lost"><div class="stat-num" id="kpi-lost">0</div><div class="stat-label">Open lost reports</div></div>
+          <div class="stat is-found"><div class="stat-num" id="kpi-found">0</div><div class="stat-label">Open found reports</div></div>
+          <div class="stat is-amber"><div class="stat-num" id="kpi-claims">0</div><div class="stat-label">Claims awaiting review</div></div>
+          <div class="stat is-brand"><div class="stat-num" id="kpi-returned">0</div><div class="stat-label">Items returned</div></div>
+          <div class="stat"><div class="stat-num" id="kpi-users">0</div><div class="stat-label">Registered users</div></div>
+        </div>
+      </section>
+
+      <section style="margin-top:32px" aria-labelledby="attn-heading">
+        <h2 id="attn-heading" style="font-size:1.4rem;margin-bottom:12px">Needs your attention</h2>
+        <div id="attention" class="attention" aria-live="polite"></div>
+      </section>
+
+      <section style="margin-top:32px" aria-labelledby="charts-heading">
+        <h2 id="charts-heading" style="font-size:1.4rem;margin-bottom:12px">Analytics</h2>
+        <div class="chart-grid">
+          <article class="card chart-card">
+            <h3>Reports by category</h3>
+            <p class="muted small">Lost and found reports, withdrawn ones excluded.</p>
+            <div class="chart-box"><canvas id="chart-category" role="img" aria-label="Bar chart of lost and found reports per category"></canvas></div>
+            <details class="chart-table"><summary>View as table</summary><div id="table-category"></div></details>
+          </article>
+          <article class="card chart-card">
+            <h3>Reports filed, last 14 days</h3>
+            <p class="muted small">New lost and found reports per day.</p>
+            <div class="chart-box"><canvas id="chart-days" role="img" aria-label="Line chart of reports filed per day"></canvas></div>
+            <details class="chart-table"><summary>View as table</summary><div id="table-days"></div></details>
+          </article>
+          <article class="card chart-card">
+            <h3>Claims by status</h3>
+            <p class="muted small">Every claim ever submitted.</p>
+            <div class="chart-box"><canvas id="chart-claims" role="img" aria-label="Bar chart of claims per status"></canvas></div>
+            <details class="chart-table"><summary>View as table</summary><div id="table-claims"></div></details>
+          </article>
+          <article class="card chart-card return-card">
+            <h3>Return rate</h3>
+            <p class="muted small">Found items that went back to their owner.</p>
+            <div class="rate-num" id="rate-num">0%</div>
+            <div class="rate-bar" role="img" id="rate-bar" aria-label="Return rate"><span id="rate-fill"></span></div>
+            <p class="muted small" id="rate-text" style="margin:10px 0 0"></p>
+          </article>
+        </div>
+      </section>
+
+      <section style="margin-top:32px">
+        <h2 style="font-size:1.4rem">Latest reports</h2>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr><th>Ref</th><th>Type</th><th>Item</th><th>Location</th><th>Reported by</th><th>Status</th><th>Date</th></tr>
+            </thead>
+            <tbody id="recent-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section style="margin-top:32px" class="grid grid-2">
+        <div class="card">
+          <h3>Demo tools</h3>
+          <p class="muted">Load a ready-made set of reports and claims for a presentation, or restore the original demo accounts. Prototype only.</p>
+          <button class="btn btn-ghost" type="button" id="load-sample">Load sample data</button>
+          <button class="btn btn-ghost" type="button" id="reset-demo">Reset demo data</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/reports.js"></script>
+  <script src="../js/claims.js"></script>
+  <script src="../js/search-match.js"></script>
+  <script src="../js/admin.js"></script>
+  <script src="../js/vendor/chart.umd.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../js/admin-dashboard.js"></script>
+</body>
+</html>

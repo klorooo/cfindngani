@@ -1,0 +1,35 @@
+const fs=require("fs"),path=require("path");const {JSDOM,VirtualConsole}=require("jsdom");const ROOT=(process.env.CF_ROOT || require("path").resolve(__dirname, ".."));
+let pass=0,fail=0;const check=(n,c,x)=>{c?pass++:fail++;console.log((c?"  ok   ":"  FAIL ")+n+(c?"":" -> "+x));};
+async function dom(page,before){const html=fs.readFileSync(path.join(ROOT,page),"utf8");const nav=[],errs=[];const vc=new VirtualConsole();vc.on("jsdomError",e=>{/navigation/i.test(e.message)?nav.push(1):errs.push(e.message)});
+const d=new JSDOM(html.replace(/<script src="[^"]+"><\/script>/g,""),{url:"http://localhost/"+page,runScripts:"outside-only",pretendToBeVisual:true,virtualConsole:vc});const w=d.window;
+const scripts=[...html.matchAll(/<script src="js\/([^"]+)"/g)].map(m=>m[1]);const early=["app.js","auth.js"];
+early.forEach(f=>w.eval(fs.readFileSync(path.join(ROOT,"js",f),"utf8")));if(before)before(w);
+scripts.filter(f=>!early.includes(f)).forEach(f=>w.eval(fs.readFileSync(path.join(ROOT,"js",f),"utf8")));if(w.document.readyState!=="complete")await new Promise(r=>w.addEventListener("load",r));w.__nav=nav;w.__errs=errs;return w;}
+const submit=(w,f)=>f.dispatchEvent(new w.Event("submit",{cancelable:true,bubbles:true}));
+(async()=>{
+ const st=w=>w.CF.auth.login("student@campusfind.test","Student@123");
+ const w=await dom("profile.html",st);const d=w.document,CF=w.CF;
+ check("shows details, email/role locked",d.getElementById("p-email").value==="student@campusfind.test"&&d.getElementById("p-email").disabled&&d.getElementById("p-role").value==="Student"&&d.getElementById("p-name").value==="Juan Dela Cruz"&&d.getElementById("p-id").value==="2023-00123");
+ check("activity tiles",[...d.querySelectorAll("#profile-stats .stat")].map(t=>t.textContent.trim()).join("|")==="2Lost reports|0Found reports|0Claims|0Unread notifications",[...d.querySelectorAll("#profile-stats .stat")].map(t=>t.textContent.trim()).join("|"));
+ const pf=d.getElementById("profile-form");
+ pf.elements.name.value="Jo";pf.elements.contact.value="123";pf.elements.idNumber.value="  ";submit(w,pf);
+ check("invalid details -> 3 field errors + alert, nothing saved",d.querySelectorAll("#profile-form .has-error").length===3&&!d.getElementById("profile-alert").hidden&&CF.db.userById("u_student").name==="Juan Dela Cruz");
+ pf.elements.name.value="  Juan P. Dela Cruz ";pf.elements.contact.value="0917-123 4567";pf.elements.idNumber.value="2023-00999";submit(w,pf);
+ const u=CF.db.userById("u_student");
+ check("valid save trims + normalises, toast, errors cleared",u.name==="Juan P. Dela Cruz"&&u.contact==="09171234567"&&u.idNumber==="2023-00999"&&d.querySelectorAll("#profile-form .has-error").length===0&&d.getElementById("profile-alert").hidden&&!!d.querySelector(".toast")&&/Juan P\./.test(d.getElementById("profile-sub").textContent));
+ check("email and role untouched",u.email==="student@campusfind.test"&&u.role==="student");
+ const pw=d.getElementById("password-form");
+ pw.elements.current.value="wrong";pw.elements.next.value="short";pw.elements.confirm.value="x";submit(w,pw);
+ check("password form flags current/new/confirm",d.querySelectorAll("#password-form .has-error").length===3);
+ pw.elements.current.value="Student@123";pw.elements.next.value="Student@123";pw.elements.confirm.value="Student@123";submit(w,pw);
+ check("same password refused",/different/.test(d.querySelector("#password-form .has-error .field-error").textContent));
+ pw.elements.next.value="NewPass99";pw.elements.confirm.value="NewPass99";submit(w,pw);
+ check("password changed, form reset",CF.auth.login("student@campusfind.test","Student@123").ok===false&&CF.auth.login("student@campusfind.test","NewPass99").ok===true&&pw.elements.current.value==="");
+ check("XSS in name stays text",(()=>{CF.auth.updateProfile("u_student",{name:'<img src=x onerror="window.__p=1">',contact:"09171234567",idNumber:"1"});return true})());
+ const x=await dom("profile.html",w2=>{w2.CF.auth.login("student@campusfind.test","Student@123");const us=w2.CF.db.users();us.find(a=>a.id==="u_student").name='<img src=x onerror="window.__p=1">';w2.CF.db.saveUsers(us);});
+ check("hostile name renders inert on the profile page",!x.__p&&!x.document.querySelector("img[onerror]"));
+ const o=await dom("profile.html");check("signed-out redirected",o.__nav.length>=1);
+ const a=await dom("profile.html",w2=>w2.CF.auth.login("admin@campusfind.test","Admin@123"));check("admin redirected to dashboard",a.__nav.length>=1);
+ const f=await dom("profile.html",w2=>w2.CF.auth.login("faculty@campusfind.test","Faculty@123"));check("faculty sees 'Employee ID number'",/Employee/.test(f.document.getElementById("p-id-label").textContent));
+ check("no script errors",w.__errs.length===0&&x.__errs.length===0,w.__errs.join("|"));
+ console.log(pass+" passed, "+fail+" failed");process.exit(fail?1:0);})();

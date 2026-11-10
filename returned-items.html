@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Returned Items — CampusFind Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body data-root="../" data-page="returned-items" data-area="admin">
+  <div class="admin-shell">
+    <aside class="sidebar" id="cf-sidebar" aria-label="Admin navigation"></aside>
+
+    <main class="admin-main">
+      <div class="admin-topbar">
+        <div>
+          <p class="eyebrow" style="margin-bottom:4px">Administration</p>
+          <h1>Returned Items</h1>
+        </div>
+        <button class="btn btn-ghost side-toggle" type="button" aria-label="Open menu">Menu</button>
+      </div>
+      <div class="grid" id="return-stats" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin-bottom:22px"></div>
+      <div class="toolbar">
+        <input class="input" type="search" id="f-q" placeholder="Search by item, owner or reference" aria-label="Search returned items">
+        <button class="btn btn-ghost" type="button" id="export-btn">Export CSV</button>
+      </div>
+      <p class="muted small" id="result-count" aria-live="polite"></p>
+      <div class="table-wrap">
+        <table class="table admin-table">
+          <thead><tr><th>Claim</th><th>Item</th><th>Returned to</th><th>Found by</th><th>Returned on</th><th>Days to return</th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <div class="empty" id="empty" hidden></div>
+      <div style="text-align:center;margin-top:18px"><button class="btn btn-ghost" type="button" id="show-more" hidden>Show more</button></div>
+
+    </main>
+  </div>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/reports.js"></script>
+  <script src="../js/search-match.js"></script>
+  <script src="../js/claims.js"></script>
+  <script src="../js/admin.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../js/admin-returned.js"></script>
+</body>
+</html>

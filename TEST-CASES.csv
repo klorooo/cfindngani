@@ -1,0 +1,890 @@
+ID,Area,Method,Test case,Result
+TC-0001,"Day 1 – Foundation, auth, layout",Automated (jsdom),seeded 5 users,Pass
+TC-0002,"Day 1 – Foundation, auth, layout",Automated (jsdom),seeded 6 items,Pass
+TC-0003,"Day 1 – Foundation, auth, layout",Automated (jsdom),11 categories,Pass
+TC-0004,"Day 1 – Foundation, auth, layout",Automated (jsdom),reference numbers unique,Pass
+TC-0005,"Day 1 – Foundation, auth, layout",Automated (jsdom),next LST ref continues sequence,Pass
+TC-0006,"Day 1 – Foundation, auth, layout",Automated (jsdom),hash deterministic,Pass
+TC-0007,"Day 1 – Foundation, auth, layout",Automated (jsdom),escapeHtml,Pass
+TC-0008,"Day 1 – Foundation, auth, layout",Automated (jsdom),student login ok,Pass
+TC-0009,"Day 1 – Foundation, auth, layout",Automated (jsdom),session persisted,Pass
+TC-0010,"Day 1 – Foundation, auth, layout",Automated (jsdom),logout clears session,Pass
+TC-0011,"Day 1 – Foundation, auth, layout",Automated (jsdom),email case-insensitive,Pass
+TC-0012,"Day 1 – Foundation, auth, layout",Automated (jsdom),wrong password rejected,Pass
+TC-0013,"Day 1 – Foundation, auth, layout",Automated (jsdom),unknown email rejected,Pass
+TC-0014,"Day 1 – Foundation, auth, layout",Automated (jsdom),empty fields give field errors,Pass
+TC-0015,"Day 1 – Foundation, auth, layout",Automated (jsdom),bad email format flagged,Pass
+TC-0016,"Day 1 – Foundation, auth, layout",Automated (jsdom),homeFor admin,Pass
+TC-0017,"Day 1 – Foundation, auth, layout",Automated (jsdom),homeFor student,Pass
+TC-0018,"Day 1 – Foundation, auth, layout",Automated (jsdom),valid registration has no errors,Pass
+TC-0019,"Day 1 – Foundation, auth, layout",Automated (jsdom),bad registration flags 7 fields,Pass
+TC-0020,"Day 1 – Foundation, auth, layout",Automated (jsdom),cannot self-register as admin,Pass
+TC-0021,"Day 1 – Foundation, auth, layout",Automated (jsdom),duplicate email blocked,Pass
+TC-0022,"Day 1 – Foundation, auth, layout",Automated (jsdom),password needs a digit,Pass
+TC-0023,"Day 1 – Foundation, auth, layout",Automated (jsdom),register ok and signed in,Pass
+TC-0024,"Day 1 – Foundation, auth, layout",Automated (jsdom),password stored hashed,Pass
+TC-0025,"Day 1 – Foundation, auth, layout",Automated (jsdom),user count now 6,Pass
+TC-0026,"Day 1 – Foundation, auth, layout",Automated (jsdom),new user can log in again,Pass
+TC-0027,"Day 1 – Foundation, auth, layout",Automated (jsdom),reset restores 5 users,Pass
+TC-0028,"Day 1 – Foundation, auth, layout",Automated (jsdom),header rendered,Pass
+TC-0029,"Day 1 – Foundation, auth, layout",Automated (jsdom),footer rendered,Pass
+TC-0030,"Day 1 – Foundation, auth, layout",Automated (jsdom),"public menu = Home, Search Items, Log in",Pass
+TC-0031,"Day 1 – Foundation, auth, layout",Automated (jsdom),Create account button,Pass
+TC-0032,"Day 1 – Foundation, auth, layout",Automated (jsdom),Home marked active,Pass
+TC-0033,"Day 1 – Foundation, auth, layout",Automated (jsdom),stats: 3 open lost,Pass
+TC-0034,"Day 1 – Foundation, auth, layout",Automated (jsdom),stats: 3 open found,Pass
+TC-0035,"Day 1 – Foundation, auth, layout",Automated (jsdom),5 recent items listed,Pass
+TC-0036,"Day 1 – Foundation, auth, layout",Automated (jsdom),signed-out CTA = Get started / Log in,Pass
+TC-0037,"Day 1 – Foundation, auth, layout",Automated (jsdom),user menu has 6 links,Pass
+TC-0038,"Day 1 – Foundation, auth, layout",Automated (jsdom),user dropdown shows Profile + Log out,Pass
+TC-0039,"Day 1 – Foundation, auth, layout",Automated (jsdom),avatar initials JC (first+last),Pass
+TC-0040,"Day 1 – Foundation, auth, layout",Automated (jsdom),personalised eyebrow,Pass
+TC-0041,"Day 1 – Foundation, auth, layout",Automated (jsdom),CTA has report buttons,Pass
+TC-0042,"Day 1 – Foundation, auth, layout",Automated (jsdom),welcome toast shown,Pass
+TC-0043,"Day 1 – Foundation, auth, layout",Automated (jsdom),mobile nav toggle opens,Pass
+TC-0044,"Day 1 – Foundation, auth, layout",Automated (jsdom),logout clears session,Pass
+TC-0045,"Day 1 – Foundation, auth, layout",Automated (jsdom),logout navigates,Pass
+TC-0046,"Day 1 – Foundation, auth, layout",Automated (jsdom),signed-out user bounced from user page,Pass
+TC-0047,"Day 1 – Foundation, auth, layout",Automated (jsdom),guard may open user page,Pass
+TC-0048,"Day 1 – Foundation, auth, layout",Automated (jsdom),admin bounced from user page,Pass
+TC-0049,"Day 1 – Foundation, auth, layout",Automated (jsdom),student bounced from admin page,Pass
+TC-0050,"Day 1 – Foundation, auth, layout",Automated (jsdom),signed-out bounced from admin page,Pass
+TC-0051,"Day 1 – Foundation, auth, layout",Automated (jsdom),search page is public,Pass
+TC-0052,"Day 1 – Foundation, auth, layout",Automated (jsdom),7 sidebar items,Pass
+TC-0053,"Day 1 – Foundation, auth, layout",Automated (jsdom),Dashboard active,Pass
+TC-0054,"Day 1 – Foundation, auth, layout",Automated (jsdom),sidebar links point at ../admin/,Pass
+TC-0055,"Day 1 – Foundation, auth, layout",Automated (jsdom),greeting,Pass
+TC-0056,"Day 1 – Foundation, auth, layout",Automated (jsdom),KPI lost=3 found=3 claims=0 returned=0 users=4,Pass
+TC-0057,"Day 1 – Foundation, auth, layout",Automated (jsdom),6 rows in latest reports,Pass
+TC-0058,"Day 1 – Foundation, auth, layout",Automated (jsdom),mobile sidebar toggle,Pass
+TC-0059,"Day 1 – Foundation, auth, layout",Automated (jsdom),demo chip fills admin credentials,Pass
+TC-0060,"Day 1 – Foundation, auth, layout",Automated (jsdom),show password toggles type,Pass
+TC-0061,"Day 1 – Foundation, auth, layout",Automated (jsdom),wrong password shows alert,Pass
+TC-0062,"Day 1 – Foundation, auth, layout",Automated (jsdom),empty email shows field error,Pass
+TC-0063,"Day 1 – Foundation, auth, layout",Automated (jsdom),good login sets session + redirects,Pass
+TC-0064,"Day 1 – Foundation, auth, layout",Automated (jsdom),loggedout notice,Pass
+TC-0065,"Day 1 – Foundation, auth, layout",Automated (jsdom),role picker shows 4 roles (no admin),Pass
+TC-0066,"Day 1 – Foundation, auth, layout",Automated (jsdom),empty submit flags 6 fields,Pass
+TC-0067,"Day 1 – Foundation, auth, layout",Automated (jsdom),error banner shown,Pass
+TC-0068,"Day 1 – Foundation, auth, layout",Automated (jsdom),ID label adapts for faculty,Pass
+TC-0069,"Day 1 – Foundation, auth, layout",Automated (jsdom),valid submit creates user + signs in,Pass
+TC-0070,"Day 1 – Foundation, auth, layout",Automated (jsdom),no field errors left,Pass
+TC-0071,"Day 1 – Foundation, auth, layout",Automated (jsdom),redirect fired,Pass
+TC-0072,"Day 1 – Foundation, auth, layout",Automated (jsdom),all 16 menu hrefs exist,Pass
+TC-0073,"Day 1 – Foundation, auth, layout",Automated (jsdom),no broken css/js references across 22 pages,Pass
+TC-0074,"Day 1 – Foundation, auth, layout",Automated (jsdom),admin stub renders with active 'Claims & Verification',Pass
+TC-0075,"Day 1 – Foundation, auth, layout",Automated (jsdom),user stub marks Report Lost active,Pass
+TC-0076,Day 2 – Reporting lost/found,Automated (jsdom),todayStr format,Pass
+TC-0077,Day 2 – Reporting lost/found,Automated (jsdom),parseDate treats date-only as local,Pass
+TC-0078,Day 2 – Reporting lost/found,Automated (jsdom),formatDate date-only,Pass
+TC-0079,Day 2 – Reporting lost/found,Automated (jsdom),create lost ok,Pass
+TC-0080,Day 2 – Reporting lost/found,Automated (jsdom),ref continues sequence LST-0004,Pass
+TC-0081,Day 2 – Reporting lost/found,Automated (jsdom),persisted,Pass
+TC-0082,Day 2 – Reporting lost/found,Automated (jsdom),photo stored,Pass
+TC-0083,Day 2 – Reporting lost/found,Automated (jsdom),find by ref is case-insensitive,Pass
+TC-0084,Day 2 – Reporting lost/found,Automated (jsdom),create found ok with FND-0004,Pass
+TC-0085,Day 2 – Reporting lost/found,Automated (jsdom),lost item has empty storedAt,Pass
+TC-0086,Day 2 – Reporting lost/found,Automated (jsdom),empty form flags required fields,Pass
+TC-0087,Day 2 – Reporting lost/found,Automated (jsdom),found requires storedAt,Pass
+TC-0088,Day 2 – Reporting lost/found,Automated (jsdom),lost does not require storedAt,Pass
+TC-0089,Day 2 – Reporting lost/found,Automated (jsdom),future date rejected,Pass
+TC-0090,Day 2 – Reporting lost/found,Automated (jsdom),date > 1 year old rejected,Pass
+TC-0091,Day 2 – Reporting lost/found,Automated (jsdom),garbage date rejected,Pass
+TC-0092,Day 2 – Reporting lost/found,Automated (jsdom),unknown category rejected,Pass
+TC-0093,Day 2 – Reporting lost/found,Automated (jsdom),unknown location rejected,Pass
+TC-0094,Day 2 – Reporting lost/found,Automated (jsdom),short description rejected,Pass
+TC-0095,Day 2 – Reporting lost/found,Automated (jsdom),501-char description rejected,Pass
+TC-0096,Day 2 – Reporting lost/found,Automated (jsdom),whitespace-only title rejected,Pass
+TC-0097,Day 2 – Reporting lost/found,Automated (jsdom),unknown type rejected,Pass
+TC-0098,Day 2 – Reporting lost/found,Automated (jsdom),values are trimmed,Pass
+TC-0099,Day 2 – Reporting lost/found,Automated (jsdom),png data-url is safe,Pass
+TC-0100,Day 2 – Reporting lost/found,Automated (jsdom),svg data-url blocked,Pass
+TC-0101,Day 2 – Reporting lost/found,Automated (jsdom),javascript: url blocked,Pass
+TC-0102,Day 2 – Reporting lost/found,Automated (jsdom),remote url blocked,Pass
+TC-0103,Day 2 – Reporting lost/found,Automated (jsdom),oversized photo blocked,Pass
+TC-0104,Day 2 – Reporting lost/found,Automated (jsdom),create rejects unsafe photo,Pass
+TC-0105,Day 2 – Reporting lost/found,Automated (jsdom),anonymous cannot create,Pass
+TC-0106,Day 2 – Reporting lost/found,Automated (jsdom),quota error reported,Pass
+TC-0107,Day 2 – Reporting lost/found,Automated (jsdom),rollback: item count unchanged,Pass
+TC-0108,Day 2 – Reporting lost/found,Automated (jsdom),rollback: counters unchanged,Pass
+TC-0109,Day 2 – Reporting lost/found,Automated (jsdom),rollback: no memory-only leftovers (get reads real storage),Pass
+TC-0110,Day 2 – Reporting lost/found,Automated (jsdom),works again after quota clears and ref not skipped,Pass
+TC-0111,Day 2 – Reporting lost/found,Automated (jsdom),"forUser returns only own, newest first",Pass
+TC-0112,Day 2 – Reporting lost/found,Automated (jsdom),owner sees private,Pass
+TC-0113,Day 2 – Reporting lost/found,Automated (jsdom),admin sees private,Pass
+TC-0114,Day 2 – Reporting lost/found,Automated (jsdom),other user does not,Pass
+TC-0115,Day 2 – Reporting lost/found,Automated (jsdom),anonymous does not,Pass
+TC-0116,Day 2 – Reporting lost/found,Automated (jsdom),non-owner cannot withdraw,Pass
+TC-0117,Day 2 – Reporting lost/found,Automated (jsdom),owner withdraws,Pass
+TC-0118,Day 2 – Reporting lost/found,Automated (jsdom),cannot withdraw twice,Pass
+TC-0119,Day 2 – Reporting lost/found,Automated (jsdom),lost: form rendered,Pass
+TC-0120,Day 2 – Reporting lost/found,Automated (jsdom),lost: heading,Pass
+TC-0121,Day 2 – Reporting lost/found,Automated (jsdom),lost: menu highlights report-lost,Pass
+TC-0122,Day 2 – Reporting lost/found,Automated (jsdom),lost: categories populated (11 + placeholder),Pass
+TC-0123,Day 2 – Reporting lost/found,Automated (jsdom),lost: locations populated,Pass
+TC-0124,Day 2 – Reporting lost/found,Automated (jsdom),lost: date defaults to today & capped,Pass
+TC-0125,Day 2 – Reporting lost/found,Automated (jsdom),lost: storedAt field only on found,Pass
+TC-0126,Day 2 – Reporting lost/found,Automated (jsdom),lost: empty submit flags fields,Pass
+TC-0127,Day 2 – Reporting lost/found,Automated (jsdom),lost: alert shown,Pass
+TC-0128,Day 2 – Reporting lost/found,Automated (jsdom),lost: no navigation on invalid,Pass
+TC-0129,Day 2 – Reporting lost/found,Automated (jsdom),lost: no script errors,Pass
+TC-0130,Day 2 – Reporting lost/found,Automated (jsdom),found: form rendered,Pass
+TC-0131,Day 2 – Reporting lost/found,Automated (jsdom),found: heading,Pass
+TC-0132,Day 2 – Reporting lost/found,Automated (jsdom),found: menu highlights report-found,Pass
+TC-0133,Day 2 – Reporting lost/found,Automated (jsdom),found: categories populated (11 + placeholder),Pass
+TC-0134,Day 2 – Reporting lost/found,Automated (jsdom),found: locations populated,Pass
+TC-0135,Day 2 – Reporting lost/found,Automated (jsdom),found: date defaults to today & capped,Pass
+TC-0136,Day 2 – Reporting lost/found,Automated (jsdom),found: storedAt field only on found,Pass
+TC-0137,Day 2 – Reporting lost/found,Automated (jsdom),found: empty submit flags fields,Pass
+TC-0138,Day 2 – Reporting lost/found,Automated (jsdom),found: alert shown,Pass
+TC-0139,Day 2 – Reporting lost/found,Automated (jsdom),found: no navigation on invalid,Pass
+TC-0140,Day 2 – Reporting lost/found,Automated (jsdom),found: no script errors,Pass
+TC-0141,Day 2 – Reporting lost/found,Automated (jsdom),char counter updates,Pass
+TC-0142,Day 2 – Reporting lost/found,Automated (jsdom),unsupported type shows error,Pass
+TC-0143,Day 2 – Reporting lost/found,Automated (jsdom),submit re-enabled after photo error,Pass
+TC-0144,Day 2 – Reporting lost/found,Automated (jsdom),oversized image shows error,Pass
+TC-0145,Day 2 – Reporting lost/found,Automated (jsdom),submit disabled while processing,Pass
+TC-0146,Day 2 – Reporting lost/found,Automated (jsdom),preview visible after processing,Pass
+TC-0147,Day 2 – Reporting lost/found,Automated (jsdom),submit enabled again,Pass
+TC-0148,Day 2 – Reporting lost/found,Automated (jsdom),remove hides preview,Pass
+TC-0149,Day 2 – Reporting lost/found,Automated (jsdom),re-add photo works,Pass
+TC-0150,Day 2 – Reporting lost/found,Automated (jsdom),report saved with next ref,Pass
+TC-0151,Day 2 – Reporting lost/found,Automated (jsdom),redirects to details with created flag,Pass
+TC-0152,Day 2 – Reporting lost/found,Automated (jsdom),no script errors,Pass
+TC-0153,Day 2 – Reporting lost/found,Automated (jsdom),storedAt missing -> blocked,Pass
+TC-0154,Day 2 – Reporting lost/found,Automated (jsdom),found report saved,Pass
+TC-0155,Day 2 – Reporting lost/found,Automated (jsdom),error state cleared,Pass
+TC-0156,Day 2 – Reporting lost/found,Automated (jsdom),student has 2 seeded reports,Pass
+TC-0157,Day 2 – Reporting lost/found,Automated (jsdom),menu highlights My Reports,Pass
+TC-0158,Day 2 – Reporting lost/found,Automated (jsdom),badges show type + status,Pass
+TC-0159,Day 2 – Reporting lost/found,Automated (jsdom),placeholder thumb for no photo,Pass
+TC-0160,Day 2 – Reporting lost/found,Automated (jsdom),Found tab -> empty state,Pass
+TC-0161,Day 2 – Reporting lost/found,Automated (jsdom),tab aria-pressed updated,Pass
+TC-0162,Day 2 – Reporting lost/found,Automated (jsdom),search 'wallet' -> 1,Pass
+TC-0163,Day 2 – Reporting lost/found,Automated (jsdom),search by reference,Pass
+TC-0164,Day 2 – Reporting lost/found,Automated (jsdom),status filter withdrawn -> none,Pass
+TC-0165,Day 2 – Reporting lost/found,Automated (jsdom),withdraw updates the card + toast,Pass
+TC-0166,Day 2 – Reporting lost/found,Automated (jsdom),withdrawn report has no withdraw button,Pass
+TC-0167,Day 2 – Reporting lost/found,Automated (jsdom),status filter finds withdrawn,Pass
+TC-0168,Day 2 – Reporting lost/found,Automated (jsdom),cancelled confirm keeps report open,Pass
+TC-0169,Day 2 – Reporting lost/found,Automated (jsdom),new user sees empty state with CTAs,Pass
+TC-0170,Day 2 – Reporting lost/found,Automated (jsdom),title rendered,Pass
+TC-0171,Day 2 – Reporting lost/found,Automated (jsdom),success banner with reference,Pass
+TC-0172,Day 2 – Reporting lost/found,Automated (jsdom),photo shown,Pass
+TC-0173,Day 2 – Reporting lost/found,Automated (jsdom),owner sees private marks,Pass
+TC-0174,Day 2 – Reporting lost/found,Automated (jsdom),owner sees own contact,Pass
+TC-0175,Day 2 – Reporting lost/found,Automated (jsdom),owner gets withdraw button,Pass
+TC-0176,Day 2 – Reporting lost/found,Automated (jsdom),owner sees matches placeholder,Pass
+TC-0177,Day 2 – Reporting lost/found,Automated (jsdom),facts: Last seen at Library,Pass
+TC-0178,Day 2 – Reporting lost/found,Automated (jsdom),withdrawing re-renders as Withdrawn,Pass
+TC-0179,Day 2 – Reporting lost/found,Automated (jsdom),non-owner: no private marks,Pass
+TC-0180,Day 2 – Reporting lost/found,Automated (jsdom),non-owner: contact hidden,Pass
+TC-0181,Day 2 – Reporting lost/found,Automated (jsdom),non-owner: no banner/withdraw,Pass
+TC-0182,Day 2 – Reporting lost/found,Automated (jsdom),non-owner on LOST item: 'I found this item' link,Pass
+TC-0183,Day 2 – Reporting lost/found,Automated (jsdom),non-owner: no matches placeholder,Pass
+TC-0184,Day 2 – Reporting lost/found,Automated (jsdom),found item shows claim link with item id,Pass
+TC-0185,Day 2 – Reporting lost/found,Automated (jsdom),shows where item is kept for found items,Pass
+TC-0186,Day 2 – Reporting lost/found,Automated (jsdom),unknown id -> not found page,Pass
+TC-0187,Day 2 – Reporting lost/found,Automated (jsdom),?ref= lookup works,Pass
+TC-0188,Day 2 – Reporting lost/found,Automated (jsdom),XSS: nothing executed,Pass
+TC-0189,Day 2 – Reporting lost/found,Automated (jsdom),XSS: title shown as text,Pass
+TC-0190,Day 2 – Reporting lost/found,Automated (jsdom),XSS: no injected <img onerror> or <script> or <b>,Pass
+TC-0191,Day 2 – Reporting lost/found,Automated (jsdom),XSS: unsafe photo falls back to placeholder,Pass
+TC-0192,Day 2 – Reporting lost/found,Automated (jsdom),XSS: list escapes title,Pass
+TC-0193,Day 2 – Reporting lost/found,Automated (jsdom),signed-out bounced from report form,Pass
+TC-0194,Day 2 – Reporting lost/found,Automated (jsdom),signed-out bounced from item details,Pass
+TC-0195,Day 2 – Reporting lost/found,Automated (jsdom),admin bounced from report form,Pass
+TC-0196,Day 2 – Reporting lost/found,Automated (jsdom),no broken css/js references,Pass
+TC-0197,Day 3 – Search and matching,Automated (jsdom),"drops stopwords + short words, keeps 'id'",Pass
+TC-0198,Day 3 – Search and matching,Automated (jsdom),plural stemming: keys/wallets,Pass
+TC-0199,Day 3 – Search and matching,Automated (jsdom),-sses and -ies stemming,Pass
+TC-0200,Day 3 – Search and matching,Automated (jsdom),synonyms: cellphone/iPhone -> phone,Pass
+TC-0201,Day 3 – Search and matching,Automated (jsdom),synonyms: backpack -> bag,Pass
+TC-0202,Day 3 – Search and matching,Automated (jsdom),"Filipino terms: payong, pitaka, susi",Pass
+TC-0203,Day 3 – Search and matching,Automated (jsdom),"grey == gray, hoodie == jacket",Pass
+TC-0204,Day 3 – Search and matching,Automated (jsdom),accents stripped,Pass
+TC-0205,Day 3 – Search and matching,Automated (jsdom),deduplicates,Pass
+TC-0206,Day 3 – Search and matching,Automated (jsdom),null/empty safe,Pass
+TC-0207,Day 3 – Search and matching,Automated (jsdom),seed wallet pair is a strong match (>=75),Pass
+TC-0208,Day 3 – Search and matching,Automated (jsdom),reasons explain why,Pass
+TC-0209,Day 3 – Search and matching,Automated (jsdom),parts sum to score,Pass
+TC-0210,Day 3 – Search and matching,Automated (jsdom),score is 0..100,Pass
+TC-0211,Day 3 – Search and matching,Automated (jsdom),umbrella vs keys is not a match (<40),Pass
+TC-0212,Day 3 – Search and matching,Automated (jsdom),calculator vs hoodie is not a match,Pass
+TC-0213,Day 3 – Search and matching,Automated (jsdom),identifying marks are ignored by the scorer,Pass
+TC-0214,Day 3 – Search and matching,Automated (jsdom),colour mismatch lowers score by 13,Pass
+TC-0215,Day 3 – Search and matching,Automated (jsdom),"brand match adds 5, mismatch subtracts 6",Pass
+TC-0216,Day 3 – Search and matching,Automated (jsdom),related category = 15 pts,Pass
+TC-0217,Day 3 – Search and matching,Automated (jsdom),'Others' category = 12 pts,Pass
+TC-0218,Day 3 – Search and matching,Automated (jsdom),unrelated category = 0 pts,Pass
+TC-0219,Day 3 – Search and matching,Automated (jsdom),nearby place = 7 pts,Pass
+TC-0220,Day 3 – Search and matching,Automated (jsdom),far place = 0 pts,Pass
+TC-0221,Day 3 – Search and matching,Automated (jsdom),same day = 10,Pass
+TC-0222,Day 3 – Search and matching,Automated (jsdom),"found 3 days later = 10, 7 days = 7, 14 = 4, 30 = 2, 40 = 0",Pass
+TC-0223,Day 3 – Search and matching,Automated (jsdom),"found 1 day before = 6, 5 days before = 0",Pass
+TC-0224,Day 3 – Search and matching,Automated (jsdom),mixed date formats (ISO timestamp vs date-only),Pass
+TC-0225,Day 3 – Search and matching,Automated (jsdom),score clamps at 0,Pass
+TC-0226,Day 3 – Search and matching,Automated (jsdom),tierOf boundaries,Pass
+TC-0227,Day 3 – Search and matching,Automated (jsdom),synonyms count as a name match (cellphone ~ iPhone),Pass
+TC-0228,Day 3 – Search and matching,Automated (jsdom),loginUrl keeps the query string,Pass
+TC-0229,Day 3 – Search and matching,Automated (jsdom),round-trips through safeNext,Pass
+TC-0230,Day 3 – Search and matching,Automated (jsdom),admin loginUrl uses ../ and admin/ prefix,Pass
+TC-0231,Day 3 – Search and matching,Automated (jsdom),"safeNext accepts plain pages, queries, admin/",Pass
+TC-0232,Day 3 – Search and matching,Automated (jsdom),"safeNext rejects schemes, // and ..",Pass
+TC-0233,Day 3 – Search and matching,Automated (jsdom),lost wallet -> found wallet only,Pass
+TC-0234,Day 3 – Search and matching,Automated (jsdom),found wallet -> lost wallet only,Pass
+TC-0235,Day 3 – Search and matching,Automated (jsdom),lost umbrella has no candidates,Pass
+TC-0236,Day 3 – Search and matching,Automated (jsdom),own found report is not suggested to the same user,Pass
+TC-0237,Day 3 – Search and matching,Automated (jsdom),results sorted best first,Pass
+TC-0238,Day 3 – Search and matching,Automated (jsdom),second counterpart appears,Pass
+TC-0239,Day 3 – Search and matching,Automated (jsdom),claimed items are not suggested,Pass
+TC-0240,Day 3 – Search and matching,Automated (jsdom),withdrawn items are not suggested,Pass
+TC-0241,Day 3 – Search and matching,Automated (jsdom),a withdrawn report gets no suggestions,Pass
+TC-0242,Day 3 – Search and matching,Automated (jsdom),search page load already synced the suggestion,Pass
+TC-0243,Day 3 – Search and matching,Automated (jsdom),sync stores a suggestion record,Pass
+TC-0244,Day 3 – Search and matching,Automated (jsdom),record shape,Pass
+TC-0245,Day 3 – Search and matching,Automated (jsdom),sync is idempotent,Pass
+TC-0246,Day 3 – Search and matching,Automated (jsdom),syncAll from the found side adds nothing new,Pass
+TC-0247,Day 3 – Search and matching,Automated (jsdom),syncing a found item finds the same pair,Pass
+TC-0248,Day 3 – Search and matching,Automated (jsdom),dismissed pair is hidden for both sides,Pass
+TC-0249,Day 3 – Search and matching,Automated (jsdom),a dismissed pair is not re-added as a new suggestion,Pass
+TC-0250,Day 3 – Search and matching,Automated (jsdom),no filters -> all 6,Pass
+TC-0251,Day 3 – Search and matching,Automated (jsdom),"type lost -> 3, found -> 3",Pass
+TC-0252,Day 3 – Search and matching,Automated (jsdom),q 'wallet' -> both wallets,Pass
+TC-0253,Day 3 – Search and matching,Automated (jsdom),plural 'wallets' matches,Pass
+TC-0254,Day 3 – Search and matching,Automated (jsdom),prefix 'walle' matches,Pass
+TC-0255,Day 3 – Search and matching,Automated (jsdom),"all words must match: 'black wallet' ok, 'black umbrella' none",Pass
+TC-0256,Day 3 – Search and matching,Automated (jsdom),reference number search,Pass
+TC-0257,Day 3 – Search and matching,Automated (jsdom),"synonym search: jacket -> hoodie, susi -> keys, payong -> umbrella",Pass
+TC-0258,Day 3 – Search and matching,Automated (jsdom),matches on colour/brand/place fields,Pass
+TC-0259,Day 3 – Search and matching,Automated (jsdom),query of only stopwords = no query,Pass
+TC-0260,Day 3 – Search and matching,Automated (jsdom),category filter,Pass
+TC-0261,Day 3 – Search and matching,Automated (jsdom),place filter,Pass
+TC-0262,Day 3 – Search and matching,Automated (jsdom),combined filters narrow,Pass
+TC-0263,Day 3 – Search and matching,Automated (jsdom),unknown category yields nothing,Pass
+TC-0264,Day 3 – Search and matching,Automated (jsdom),date from (last 2 days),Pass
+TC-0265,Day 3 – Search and matching,Automated (jsdom),date to (4+ days ago),Pass
+TC-0266,Day 3 – Search and matching,Automated (jsdom),date range of one day,Pass
+TC-0267,Day 3 – Search and matching,Automated (jsdom),"closed + withdrawn hidden by default, matched shown",Pass
+TC-0268,Day 3 – Search and matching,Automated (jsdom),includeClosed adds claimed + returned but never withdrawn,Pass
+TC-0269,Day 3 – Search and matching,Automated (jsdom),relevance: title hit ranks above description-only hit,Pass
+TC-0270,Day 3 – Search and matching,Automated (jsdom),description-only hit is still found,Pass
+TC-0271,Day 3 – Search and matching,Automated (jsdom),newest/oldest sorts are reverses,Pass
+TC-0272,Day 3 – Search and matching,Automated (jsdom),sort=relevance without q falls back to newest,Pass
+TC-0273,Day 3 – Search and matching,Automated (jsdom),public: header + search nav active,Pass
+TC-0274,Day 3 – Search and matching,Automated (jsdom),guest note visible,Pass
+TC-0275,Day 3 – Search and matching,Automated (jsdom),6 cards + summary,Pass
+TC-0276,Day 3 – Search and matching,Automated (jsdom),dropdowns populated,Pass
+TC-0277,Day 3 – Search and matching,Automated (jsdom),CTA says 'Log in to view',Pass
+TC-0278,Day 3 – Search and matching,Automated (jsdom),no private data on cards,Pass
+TC-0279,Day 3 – Search and matching,Automated (jsdom),no for-you strip for guests,Pass
+TC-0280,Day 3 – Search and matching,Automated (jsdom),typing filters live,Pass
+TC-0281,Day 3 – Search and matching,Automated (jsdom),sort auto-switches to best match,Pass
+TC-0282,Day 3 – Search and matching,Automated (jsdom),chip for the query,Pass
+TC-0283,Day 3 – Search and matching,Automated (jsdom),URL mirrors state,Pass
+TC-0284,Day 3 – Search and matching,Automated (jsdom),trailing space survives while typing,Pass
+TC-0285,Day 3 – Search and matching,Automated (jsdom),type tab narrows and updates aria-pressed,Pass
+TC-0286,Day 3 – Search and matching,Automated (jsdom),URL has q + type,Pass
+TC-0287,Day 3 – Search and matching,Automated (jsdom),removing the type chip widens results,Pass
+TC-0288,Day 3 – Search and matching,Automated (jsdom),category + query (no overlap) -> empty state,Pass
+TC-0289,Day 3 – Search and matching,Automated (jsdom),empty state offers sign-up for guests,Pass
+TC-0290,Day 3 – Search and matching,Automated (jsdom),clear all resets everything,Pass
+TC-0291,Day 3 – Search and matching,Automated (jsdom),explicit sort choice is kept while typing,Pass
+TC-0292,Day 3 – Search and matching,Automated (jsdom),date-from filter,Pass
+TC-0293,Day 3 – Search and matching,Automated (jsdom),date-to filter,Pass
+TC-0294,Day 3 – Search and matching,Automated (jsdom),date chips removable,Pass
+TC-0295,Day 3 – Search and matching,Automated (jsdom),no script errors,Pass
+TC-0296,Day 3 – Search and matching,Automated (jsdom),"paging: 9 shown of 18, button says 9 left",Pass
+TC-0297,Day 3 – Search and matching,Automated (jsdom),paging: show more reveals the rest,Pass
+TC-0298,Day 3 – Search and matching,Automated (jsdom),paging resets when filters change,Pass
+TC-0299,Day 3 – Search and matching,Automated (jsdom),URL state restores results,Pass
+TC-0300,Day 3 – Search and matching,Automated (jsdom),URL state restores controls,Pass
+TC-0301,Day 3 – Search and matching,Automated (jsdom),invalid URL params are ignored,Pass
+TC-0302,Day 3 – Search and matching,Automated (jsdom),XSS via ?q= is inert,Pass
+TC-0303,Day 3 – Search and matching,Automated (jsdom),q is length-capped,Pass
+TC-0304,Day 3 – Search and matching,Automated (jsdom),stored XSS title escaped + unsafe photo ignored,Pass
+TC-0305,Day 3 – Search and matching,Automated (jsdom),private identifying marks never appear in results,Pass
+TC-0306,Day 3 – Search and matching,Automated (jsdom),guest note hidden for members,Pass
+TC-0307,Day 3 – Search and matching,Automated (jsdom),CTA 'View details',Pass
+TC-0308,Day 3 – Search and matching,Automated (jsdom),own reports flagged 'Your report',Pass
+TC-0309,Day 3 – Search and matching,Automated (jsdom),for-you strip lists LST-0001 with 1 match,Pass
+TC-0310,Day 3 – Search and matching,Automated (jsdom),for-you link targets #matches,Pass
+TC-0311,Day 3 – Search and matching,Automated (jsdom),syncAll stored the suggestion,Pass
+TC-0312,Day 3 – Search and matching,Automated (jsdom),guard sees FND-0001 match strip,Pass
+TC-0313,Day 3 – Search and matching,Automated (jsdom),no strip when nothing matches,Pass
+TC-0314,Day 3 – Search and matching,Automated (jsdom),no strip for admins,Pass
+TC-0315,Day 3 – Search and matching,Automated (jsdom),empty state offers report buttons to members,Pass
+TC-0316,Day 3 – Search and matching,Automated (jsdom),owner sees the matches panel,Pass
+TC-0317,Day 3 – Search and matching,Automated (jsdom),count badge,Pass
+TC-0318,Day 3 – Search and matching,Automated (jsdom),"shows the found wallet with tier, score and reasons",Pass
+TC-0319,Day 3 – Search and matching,Automated (jsdom),meter exposes the score to assistive tech,Pass
+TC-0320,Day 3 – Search and matching,Automated (jsdom),link opens the found item,Pass
+TC-0321,Day 3 – Search and matching,Automated (jsdom),matched item's private marks not leaked in panel,Pass
+TC-0322,Day 3 – Search and matching,Automated (jsdom),suggestion persisted on view,Pass
+TC-0323,Day 3 – Search and matching,Automated (jsdom),no script errors,Pass
+TC-0324,Day 3 – Search and matching,Automated (jsdom),finder sees matching LOST reports,Pass
+TC-0325,Day 3 – Search and matching,Automated (jsdom),no matches -> friendly empty state,Pass
+TC-0326,Day 3 – Search and matching,Automated (jsdom),empty state links to a pre-filtered search,Pass
+TC-0327,Day 3 – Search and matching,Automated (jsdom),non-owner gets NO matches panel and no private marks,Pass
+TC-0328,Day 3 – Search and matching,Automated (jsdom),withdrawn report shows no matches panel,Pass
+TC-0329,Day 3 – Search and matching,Automated (jsdom),banner announces the match right after submitting,Pass
+TC-0330,Day 3 – Search and matching,Automated (jsdom),"hoodie report matched the found hoodie (synonym-free, same place)",Pass
+TC-0331,Day 3 – Search and matching,Automated (jsdom),report saved,Pass
+TC-0332,Day 3 – Search and matching,Automated (jsdom),suggestions stored at submit time,Pass
+TC-0333,Day 3 – Search and matching,Automated (jsdom),no script errors,Pass
+TC-0334,Day 3 – Search and matching,Automated (jsdom),only LST-0001 has a match pill,Pass
+TC-0335,Day 3 – Search and matching,Automated (jsdom),pill sits in the LST-0001 card,Pass
+TC-0336,Day 3 – Search and matching,Automated (jsdom),pill disappears after withdrawing,Pass
+TC-0337,Day 3 – Search and matching,Automated (jsdom),home hero has a GET search form to search.html,Pass
+TC-0338,Day 3 – Search and matching,Automated (jsdom),header rendered,Pass
+TC-0339,Day 3 – Search and matching,Automated (jsdom),no broken css/js references across 22 pages,Pass
+TC-0340,Day 3 – Search and matching,Automated (jsdom),search-match.js loads after reports.js and before layout.js everywhere,Pass
+TC-0341,"Day 4 – Claims, tracker, notifications",Automated (jsdom),starts empty,Pass
+TC-0342,"Day 4 – Claims, tracker, notifications",Automated (jsdom),add returns the entry,Pass
+TC-0343,"Day 4 – Claims, tracker, notifications",Automated (jsdom),scoped per user,Pass
+TC-0344,"Day 4 – Claims, tracker, notifications",Automated (jsdom),unread count,Pass
+TC-0345,"Day 4 – Claims, tracker, notifications",Automated (jsdom),newest first,Pass
+TC-0346,"Day 4 – Claims, tracker, notifications",Automated (jsdom),markRead works once,Pass
+TC-0347,"Day 4 – Claims, tracker, notifications",Automated (jsdom),cannot mark someone else's notification,Pass
+TC-0348,"Day 4 – Claims, tracker, notifications",Automated (jsdom),markAllRead returns how many,Pass
+TC-0349,"Day 4 – Claims, tracker, notifications",Automated (jsdom),add ignores missing user / payload,Pass
+TC-0350,"Day 4 – Claims, tracker, notifications",Automated (jsdom),long text is truncated,Pass
+TC-0351,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"keeps at most 100 per user, dropping the oldest",Pass
+TC-0352,"Day 4 – Claims, tracker, notifications",Automated (jsdom),cap does not touch other users,Pass
+TC-0353,"Day 4 – Claims, tracker, notifications",Automated (jsdom),student can claim a found item,Pass
+TC-0354,"Day 4 – Claims, tracker, notifications",Automated (jsdom),the finder cannot claim their own item,Pass
+TC-0355,"Day 4 – Claims, tracker, notifications",Automated (jsdom),lost reports cannot be claimed,Pass
+TC-0356,"Day 4 – Claims, tracker, notifications",Automated (jsdom),admins cannot claim,Pass
+TC-0357,"Day 4 – Claims, tracker, notifications",Automated (jsdom),missing item,Pass
+TC-0358,"Day 4 – Claims, tracker, notifications",Automated (jsdom),signed-out,Pass
+TC-0359,"Day 4 – Claims, tracker, notifications",Automated (jsdom),claimed items are closed,Pass
+TC-0360,"Day 4 – Claims, tracker, notifications",Automated (jsdom),matched items are still claimable,Pass
+TC-0361,"Day 4 – Claims, tracker, notifications",Automated (jsdom),after claiming: 'active' with the claim attached,Pass
+TC-0362,"Day 4 – Claims, tracker, notifications",Automated (jsdom),other people can still claim the same item,Pass
+TC-0363,"Day 4 – Claims, tracker, notifications",Automated (jsdom),attempt 1 accepted,Pass
+TC-0364,"Day 4 – Claims, tracker, notifications",Automated (jsdom),attempt 2 accepted,Pass
+TC-0365,"Day 4 – Claims, tracker, notifications",Automated (jsdom),attempt 3 accepted,Pass
+TC-0366,"Day 4 – Claims, tracker, notifications",Automated (jsdom),4th claim on the same item is blocked,Pass
+TC-0367,"Day 4 – Claims, tracker, notifications",Automated (jsdom),valid proof has no errors,Pass
+TC-0368,"Day 4 – Claims, tracker, notifications",Automated (jsdom),empty form flags every required field,Pass
+TC-0369,"Day 4 – Claims, tracker, notifications",Automated (jsdom),short description,Pass
+TC-0370,"Day 4 – Claims, tracker, notifications",Automated (jsdom),501-char description,Pass
+TC-0371,"Day 4 – Claims, tracker, notifications",Automated (jsdom),short proof details,Pass
+TC-0372,"Day 4 – Claims, tracker, notifications",Automated (jsdom),whitespace-only proof,Pass
+TC-0373,"Day 4 – Claims, tracker, notifications",Automated (jsdom),bad date,Pass
+TC-0374,"Day 4 – Claims, tracker, notifications",Automated (jsdom),future date,Pass
+TC-0375,"Day 4 – Claims, tracker, notifications",Automated (jsdom),more than a year ago,Pass
+TC-0376,"Day 4 – Claims, tracker, notifications",Automated (jsdom),cannot be lost AFTER it was found,Pass
+TC-0377,"Day 4 – Claims, tracker, notifications",Automated (jsdom),same day as found is fine,Pass
+TC-0378,"Day 4 – Claims, tracker, notifications",Automated (jsdom),unknown place,Pass
+TC-0379,"Day 4 – Claims, tracker, notifications",Automated (jsdom),declaration must be exactly true,Pass
+TC-0380,"Day 4 – Claims, tracker, notifications",Automated (jsdom),values are trimmed,Pass
+TC-0381,"Day 4 – Claims, tracker, notifications",Automated (jsdom),own open lost report may be linked,Pass
+TC-0382,"Day 4 – Claims, tracker, notifications",Automated (jsdom),linked report is normalised to its id,Pass
+TC-0383,"Day 4 – Claims, tracker, notifications",Automated (jsdom),someone else's lost report is rejected,Pass
+TC-0384,"Day 4 – Claims, tracker, notifications",Automated (jsdom),a found report can't be linked,Pass
+TC-0385,"Day 4 – Claims, tracker, notifications",Automated (jsdom),unknown report id is rejected,Pass
+TC-0386,"Day 4 – Claims, tracker, notifications",Automated (jsdom),withdrawn lost report can't be linked,Pass
+TC-0387,"Day 4 – Claims, tracker, notifications",Automated (jsdom),2 photos ok,Pass
+TC-0388,"Day 4 – Claims, tracker, notifications",Automated (jsdom),3 photos rejected,Pass
+TC-0389,"Day 4 – Claims, tracker, notifications",Automated (jsdom),unsafe photo rejected,Pass
+TC-0390,"Day 4 – Claims, tracker, notifications",Automated (jsdom),submit ok with reference CLM-0001,Pass
+TC-0391,"Day 4 – Claims, tracker, notifications",Automated (jsdom),record fields,Pass
+TC-0392,"Day 4 – Claims, tracker, notifications",Automated (jsdom),timeline starts with 'submitted',Pass
+TC-0393,"Day 4 – Claims, tracker, notifications",Automated (jsdom),persisted + findable by ref (any case) and id,Pass
+TC-0394,"Day 4 – Claims, tracker, notifications",Automated (jsdom),submitting does NOT change the item's status,Pass
+TC-0395,"Day 4 – Claims, tracker, notifications",Automated (jsdom),claimant gets a confirmation notification,Pass
+TC-0396,"Day 4 – Claims, tracker, notifications",Automated (jsdom),duplicate active claim blocked,Pass
+TC-0397,"Day 4 – Claims, tracker, notifications",Automated (jsdom),own item blocked with message,Pass
+TC-0398,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"validation errors returned, nothing saved",Pass
+TC-0399,"Day 4 – Claims, tracker, notifications",Automated (jsdom),second claimant allowed (competing claim),Pass
+TC-0400,"Day 4 – Claims, tracker, notifications",Automated (jsdom),forUser is scoped and newest first,Pass
+TC-0401,"Day 4 – Claims, tracker, notifications",Automated (jsdom),quota error is reported,Pass
+TC-0402,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"rollback: no claim, counter unchanged",Pass
+TC-0403,"Day 4 – Claims, tracker, notifications",Automated (jsdom),works afterwards and the reference isn't skipped,Pass
+TC-0404,"Day 4 – Claims, tracker, notifications",Automated (jsdom),evidence is stored as safe photos only,Pass
+TC-0405,"Day 4 – Claims, tracker, notifications",Automated (jsdom),non-admin cannot review,Pass
+TC-0406,"Day 4 – Claims, tracker, notifications",Automated (jsdom),unknown action / claim,Pass
+TC-0407,"Day 4 – Claims, tracker, notifications",Automated (jsdom),request_info needs a note,Pass
+TC-0408,"Day 4 – Claims, tracker, notifications",Automated (jsdom),request_info -> needs_info,Pass
+TC-0409,"Day 4 – Claims, tracker, notifications",Automated (jsdom),claimant notified with the question,Pass
+TC-0410,"Day 4 – Claims, tracker, notifications",Automated (jsdom),timeline records the request by the admin,Pass
+TC-0411,"Day 4 – Claims, tracker, notifications",Automated (jsdom),cannot request twice,Pass
+TC-0412,"Day 4 – Claims, tracker, notifications",Automated (jsdom),others cannot reply,Pass
+TC-0413,"Day 4 – Claims, tracker, notifications",Automated (jsdom),cannot reply on a pending claim,Pass
+TC-0414,"Day 4 – Claims, tracker, notifications",Automated (jsdom),reply needs text,Pass
+TC-0415,"Day 4 – Claims, tracker, notifications",Automated (jsdom),reply rejects bad photos,Pass
+TC-0416,"Day 4 – Claims, tracker, notifications",Automated (jsdom),reply -> back to pending,Pass
+TC-0417,"Day 4 – Claims, tracker, notifications",Automated (jsdom),reply recorded with photo,Pass
+TC-0418,"Day 4 – Claims, tracker, notifications",Automated (jsdom),can't reply when nothing was asked,Pass
+TC-0419,"Day 4 – Claims, tracker, notifications",Automated (jsdom),approve -> approved,Pass
+TC-0420,"Day 4 – Claims, tracker, notifications",Automated (jsdom),found item becomes 'claimed',Pass
+TC-0421,"Day 4 – Claims, tracker, notifications",Automated (jsdom),linked lost report becomes 'claimed',Pass
+TC-0422,"Day 4 – Claims, tracker, notifications",Automated (jsdom),stored match suggestion is confirmed,Pass
+TC-0423,"Day 4 – Claims, tracker, notifications",Automated (jsdom),rival claim auto-rejected,Pass
+TC-0424,"Day 4 – Claims, tracker, notifications",Automated (jsdom),rival notified,Pass
+TC-0425,"Day 4 – Claims, tracker, notifications",Automated (jsdom),winner notified with the pickup note,Pass
+TC-0426,"Day 4 – Claims, tracker, notifications",Automated (jsdom),approved item leaves default search,Pass
+TC-0427,"Day 4 – Claims, tracker, notifications",Automated (jsdom),can't approve twice / reject after approve,Pass
+TC-0428,"Day 4 – Claims, tracker, notifications",Automated (jsdom),a new claim on a claimed item is closed,Pass
+TC-0429,"Day 4 – Claims, tracker, notifications",Automated (jsdom),only admins mark returned,Pass
+TC-0430,"Day 4 – Claims, tracker, notifications",Automated (jsdom),can't return a claim that isn't approved,Pass
+TC-0431,"Day 4 – Claims, tracker, notifications",Automated (jsdom),markReturned -> returned + items returned,Pass
+TC-0432,"Day 4 – Claims, tracker, notifications",Automated (jsdom),claimant notified of the return,Pass
+TC-0433,"Day 4 – Claims, tracker, notifications",Automated (jsdom),can't return twice,Pass
+TC-0434,"Day 4 – Claims, tracker, notifications",Automated (jsdom),reject needs a reason,Pass
+TC-0435,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"reject -> rejected, item stays open",Pass
+TC-0436,"Day 4 – Claims, tracker, notifications",Automated (jsdom),rejection notifies with the reason,Pass
+TC-0437,"Day 4 – Claims, tracker, notifications",Automated (jsdom),rejected claimant may try again,Pass
+TC-0438,"Day 4 – Claims, tracker, notifications",Automated (jsdom),can't approve when the item is gone,Pass
+TC-0439,"Day 4 – Claims, tracker, notifications",Automated (jsdom),only the claimant may cancel,Pass
+TC-0440,"Day 4 – Claims, tracker, notifications",Automated (jsdom),cancel works,Pass
+TC-0441,"Day 4 – Claims, tracker, notifications",Automated (jsdom),can't cancel twice,Pass
+TC-0442,"Day 4 – Claims, tracker, notifications",Automated (jsdom),can claim again after cancelling,Pass
+TC-0443,"Day 4 – Claims, tracker, notifications",Automated (jsdom),approved/rejected claims can't be cancelled,Pass
+TC-0444,"Day 4 – Claims, tracker, notifications",Automated (jsdom),finder can't withdraw an item under claim,Pass
+TC-0445,"Day 4 – Claims, tracker, notifications",Automated (jsdom),…but can once the claim is gone,Pass
+TC-0446,"Day 4 – Claims, tracker, notifications",Automated (jsdom),pending,Pass
+TC-0447,"Day 4 – Claims, tracker, notifications",Automated (jsdom),needs_info,Pass
+TC-0448,"Day 4 – Claims, tracker, notifications",Automated (jsdom),approved,Pass
+TC-0449,"Day 4 – Claims, tracker, notifications",Automated (jsdom),returned,Pass
+TC-0450,"Day 4 – Claims, tracker, notifications",Automated (jsdom),rejected,Pass
+TC-0451,"Day 4 – Claims, tracker, notifications",Automated (jsdom),cancelled,Pass
+TC-0452,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"tracker markup: 4 steps, one aria-current",Pass
+TC-0453,"Day 4 – Claims, tracker, notifications",Automated (jsdom),compact tracker has no hints,Pass
+TC-0454,"Day 4 – Claims, tracker, notifications",Automated (jsdom),owner of the matching FOUND report is alerted,Pass
+TC-0455,"Day 4 – Claims, tracker, notifications",Automated (jsdom),alert links to the matches panel,Pass
+TC-0456,"Day 4 – Claims, tracker, notifications",Automated (jsdom),the reporter is not alerted about their own report,Pass
+TC-0457,"Day 4 – Claims, tracker, notifications",Automated (jsdom),nobody else is alerted,Pass
+TC-0458,"Day 4 – Claims, tracker, notifications",Automated (jsdom),loading the search page creates no notifications,Pass
+TC-0459,"Day 4 – Claims, tracker, notifications",Automated (jsdom),a new FOUND report alerts the owner of the matching LOST report,Pass
+TC-0460,"Day 4 – Claims, tracker, notifications",Automated (jsdom),own item -> friendly block,Pass
+TC-0461,"Day 4 – Claims, tracker, notifications",Automated (jsdom),unknown item -> not found,Pass
+TC-0462,"Day 4 – Claims, tracker, notifications",Automated (jsdom),lost report -> can't be claimed,Pass
+TC-0463,"Day 4 – Claims, tracker, notifications",Automated (jsdom),no ?item= -> not found,Pass
+TC-0464,"Day 4 – Claims, tracker, notifications",Automated (jsdom),signed-out bounced to login,Pass
+TC-0465,"Day 4 – Claims, tracker, notifications",Automated (jsdom),admin bounced away,Pass
+TC-0466,"Day 4 – Claims, tracker, notifications",Automated (jsdom),existing claim -> link to it,Pass
+TC-0467,"Day 4 – Claims, tracker, notifications",Automated (jsdom),form rendered with heading,Pass
+TC-0468,"Day 4 – Claims, tracker, notifications",Automated (jsdom),menu highlights My Claims,Pass
+TC-0469,"Day 4 – Claims, tracker, notifications",Automated (jsdom),item summary shows public facts,Pass
+TC-0470,"Day 4 – Claims, tracker, notifications",Automated (jsdom),PRIVACY: finder's private marks never shown to the claimant,Pass
+TC-0471,"Day 4 – Claims, tracker, notifications",Automated (jsdom),places populated,Pass
+TC-0472,"Day 4 – Claims, tracker, notifications",Automated (jsdom),date picker capped at the day it was found,Pass
+TC-0473,"Day 4 – Claims, tracker, notifications",Automated (jsdom),lost-report dropdown lists the student's open lost reports,Pass
+TC-0474,"Day 4 – Claims, tracker, notifications",Automated (jsdom),best-matching report is preselected,Pass
+TC-0475,"Day 4 – Claims, tracker, notifications",Automated (jsdom),date + place prefilled from it,Pass
+TC-0476,"Day 4 – Claims, tracker, notifications",Automated (jsdom),hint explains the prefill,Pass
+TC-0477,"Day 4 – Claims, tracker, notifications",Automated (jsdom),empty submit flags 5 fields,Pass
+TC-0478,"Day 4 – Claims, tracker, notifications",Automated (jsdom),alert shown and no navigation,Pass
+TC-0479,"Day 4 – Claims, tracker, notifications",Automated (jsdom),blur flags a date after the found date,Pass
+TC-0480,"Day 4 – Claims, tracker, notifications",Automated (jsdom),choosing a report refills date + place,Pass
+TC-0481,"Day 4 – Claims, tracker, notifications",Automated (jsdom),1 photo added,Pass
+TC-0482,"Day 4 – Claims, tracker, notifications",Automated (jsdom),capped at 2 with a message,Pass
+TC-0483,"Day 4 – Claims, tracker, notifications",Automated (jsdom),remove frees a slot,Pass
+TC-0484,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"bad image shows its error, submit re-enabled",Pass
+TC-0485,"Day 4 – Claims, tracker, notifications",Automated (jsdom),char counter,Pass
+TC-0486,"Day 4 – Claims, tracker, notifications",Automated (jsdom),claim saved with everything,Pass
+TC-0487,"Day 4 – Claims, tracker, notifications",Automated (jsdom),redirects to the claim page,Pass
+TC-0488,"Day 4 – Claims, tracker, notifications",Automated (jsdom),no script errors,Pass
+TC-0489,"Day 4 – Claims, tracker, notifications",Automated (jsdom),empty state with a link to found items,Pass
+TC-0490,"Day 4 – Claims, tracker, notifications",Automated (jsdom),counts are zero,Pass
+TC-0491,"Day 4 – Claims, tracker, notifications",Automated (jsdom),only my 4 claims are listed,Pass
+TC-0492,"Day 4 – Claims, tracker, notifications",Automated (jsdom),tab counts (all/active/closed),Pass
+TC-0493,"Day 4 – Claims, tracker, notifications",Automated (jsdom),claims needing a reply come first and are highlighted,Pass
+TC-0494,"Day 4 – Claims, tracker, notifications",Automated (jsdom),needs-info card shows the question + 'Reply now',Pass
+TC-0495,"Day 4 – Claims, tracker, notifications",Automated (jsdom),status badges,Pass
+TC-0496,"Day 4 – Claims, tracker, notifications",Automated (jsdom),every card has a compact 4-step tracker,Pass
+TC-0497,"Day 4 – Claims, tracker, notifications",Automated (jsdom),approved/rejected notes shown,Pass
+TC-0498,"Day 4 – Claims, tracker, notifications",Automated (jsdom),card links to claim details,Pass
+TC-0499,"Day 4 – Claims, tracker, notifications",Automated (jsdom),Closed tab -> the rejected one,Pass
+TC-0500,"Day 4 – Claims, tracker, notifications",Automated (jsdom),Active tab -> 3,Pass
+TC-0501,"Day 4 – Claims, tracker, notifications",Automated (jsdom),no script errors,Pass
+TC-0502,"Day 4 – Claims, tracker, notifications",Automated (jsdom),heading shows reference + status badge,Pass
+TC-0503,"Day 4 – Claims, tracker, notifications",Automated (jsdom),created banner,Pass
+TC-0504,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"tracker: 4 steps, 'Under review' current",Pass
+TC-0505,"Day 4 – Claims, tracker, notifications",Automated (jsdom),pending panel,Pass
+TC-0506,"Day 4 – Claims, tracker, notifications",Automated (jsdom),proof shown to the claimant,Pass
+TC-0507,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"evidence photo shown, unsafe photo ignored",Pass
+TC-0508,"Day 4 – Claims, tracker, notifications",Automated (jsdom),XSS in description is inert,Pass
+TC-0509,"Day 4 – Claims, tracker, notifications",Automated (jsdom),timeline has the submission,Pass
+TC-0510,"Day 4 – Claims, tracker, notifications",Automated (jsdom),item card + cancel button,Pass
+TC-0511,"Day 4 – Claims, tracker, notifications",Automated (jsdom),no reply form yet,Pass
+TC-0512,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"cancel -> cancelled, button gone, timeline updated",Pass
+TC-0513,"Day 4 – Claims, tracker, notifications",Automated (jsdom),no script errors,Pass
+TC-0514,"Day 4 – Claims, tracker, notifications",Automated (jsdom),another user gets 'not found' and no proof,Pass
+TC-0515,"Day 4 – Claims, tracker, notifications",Automated (jsdom),unknown claim -> not found,Pass
+TC-0516,"Day 4 – Claims, tracker, notifications",Automated (jsdom),signed-out bounced to login,Pass
+TC-0517,"Day 4 – Claims, tracker, notifications",Automated (jsdom),needs-info: warning tracker step + question + reply form,Pass
+TC-0518,"Day 4 – Claims, tracker, notifications",Automated (jsdom),needs-info badge,Pass
+TC-0519,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"empty reply -> inline error, still needs_info",Pass
+TC-0520,"Day 4 – Claims, tracker, notifications",Automated (jsdom),reply photo preview,Pass
+TC-0521,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"reply sent -> back to pending, form gone",Pass
+TC-0522,"Day 4 – Claims, tracker, notifications",Automated (jsdom),reply appears in the timeline with its photo,Pass
+TC-0523,"Day 4 – Claims, tracker, notifications",Automated (jsdom),toast shown,Pass
+TC-0524,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"approved panel: pickup note, where to collect, step 'Ready for pickup'",Pass
+TC-0525,"Day 4 – Claims, tracker, notifications",Automated (jsdom),returned panel + all steps done,Pass
+TC-0526,"Day 4 – Claims, tracker, notifications",Automated (jsdom),rejected panel: reason + 'Submit a new claim',Pass
+TC-0527,"Day 4 – Claims, tracker, notifications",Automated (jsdom),bell shows the unread count,Pass
+TC-0528,"Day 4 – Claims, tracker, notifications",Automated (jsdom),bell label for screen readers,Pass
+TC-0529,"Day 4 – Claims, tracker, notifications",Automated (jsdom),bell is not part of the main nav links,Pass
+TC-0530,"Day 4 – Claims, tracker, notifications",Automated (jsdom),updateBell hides the badge at zero,Pass
+TC-0531,"Day 4 – Claims, tracker, notifications",Automated (jsdom),admins get no bell,Pass
+TC-0532,"Day 4 – Claims, tracker, notifications",Automated (jsdom),signed-out visitors get no bell,Pass
+TC-0533,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"lists only my notifications, newest first",Pass
+TC-0534,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"unread are highlighted, read are not",Pass
+TC-0535,"Day 4 – Claims, tracker, notifications",Automated (jsdom),links are anchors,Pass
+TC-0536,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"unsafe link renders as plain text, not an anchor",Pass
+TC-0537,"Day 4 – Claims, tracker, notifications",Automated (jsdom),XSS in title/body is inert,Pass
+TC-0538,"Day 4 – Claims, tracker, notifications",Automated (jsdom),page: Notifications highlighted in the header,Pass
+TC-0539,"Day 4 – Claims, tracker, notifications",Automated (jsdom),mark-all button visible,Pass
+TC-0540,"Day 4 – Claims, tracker, notifications",Automated (jsdom),opening a notification marks it read + updates the badge,Pass
+TC-0541,"Day 4 – Claims, tracker, notifications",Automated (jsdom),mark all as read,Pass
+TC-0542,"Day 4 – Claims, tracker, notifications",Automated (jsdom),toast confirms,Pass
+TC-0543,"Day 4 – Claims, tracker, notifications",Automated (jsdom),empty state,Pass
+TC-0544,"Day 4 – Claims, tracker, notifications",Automated (jsdom),signed-out bounced,Pass
+TC-0545,"Day 4 – Claims, tracker, notifications",Automated (jsdom),admin bounced to dashboard,Pass
+TC-0546,"Day 4 – Claims, tracker, notifications",Automated (jsdom),claimable: 'start a claim' link,Pass
+TC-0547,"Day 4 – Claims, tracker, notifications",Automated (jsdom),after claiming: 'View my claim · Pending review',Pass
+TC-0548,"Day 4 – Claims, tracker, notifications",Automated (jsdom),"finder is told someone claimed it, with no names",Pass
+TC-0549,"Day 4 – Claims, tracker, notifications",Automated (jsdom),finder still sees the withdraw button,Pass
+TC-0550,"Day 4 – Claims, tracker, notifications",Automated (jsdom),a competing user can still start their own claim,Pass
+TC-0551,"Day 4 – Claims, tracker, notifications",Automated (jsdom),claimed item: claimant sees 'View my claim · Approved',Pass
+TC-0552,"Day 4 – Claims, tracker, notifications",Automated (jsdom),claimed item: other users get no claim button,Pass
+TC-0553,"Day 4 – Claims, tracker, notifications",Automated (jsdom),lost items still offer 'I found this item',Pass
+TC-0554,"Day 4 – Claims, tracker, notifications",Automated (jsdom),after 3 rejections: limit notice instead of a button,Pass
+TC-0555,"Day 4 – Claims, tracker, notifications",Automated (jsdom),no broken css/js references across 22 pages,Pass
+TC-0556,"Day 4 – Claims, tracker, notifications",Automated (jsdom),claims.js loads after reports.js and before layout.js everywhere it's used,Pass
+TC-0557,"Day 4 – Claims, tracker, notifications",Automated (jsdom),every menu href exists,Pass
+TC-0558,"Day 4 – Claims, tracker, notifications",Automated (jsdom),new pages exist,Pass
+TC-0559,Day 5 – Admin module,Automated (jsdom),seed totals,Pass
+TC-0560,Day 5 – Admin module,Automated (jsdom),"by category: 5 categories, wallets first with 1 lost + 1 found",Pass
+TC-0561,Day 5 – Admin module,Automated (jsdom),by category: ties sorted A-Z,Pass
+TC-0562,Day 5 – Admin module,Automated (jsdom),"14 days of labels, oldest first, today last",Pass
+TC-0563,Day 5 – Admin module,Automated (jsdom),every seeded report lands in the window,Pass
+TC-0564,Day 5 – Admin module,Automated (jsdom),custom window,Pass
+TC-0565,Day 5 – Admin module,Automated (jsdom),"claim statuses in fixed order, all zero",Pass
+TC-0566,Day 5 – Admin module,Automated (jsdom),return rate 0 of 3,Pass
+TC-0567,Day 5 – Admin module,Automated (jsdom),returned item counted; withdrawn found report excluded from the denominator,Pass
+TC-0568,Day 5 – Admin module,Automated (jsdom),claims by status updated,Pass
+TC-0569,Day 5 – Admin module,Automated (jsdom),needs_info / awaiting handover counted separately,Pass
+TC-0570,Day 5 – Admin module,Automated (jsdom),withdrawn report leaves the category chart,Pass
+TC-0571,Day 5 – Admin module,Automated (jsdom),reports older than the window are ignored by the daily series,Pass
+TC-0572,Day 5 – Admin module,Automated (jsdom),only admins,Pass
+TC-0573,Day 5 – Admin module,Automated (jsdom),unknown report,Pass
+TC-0574,Day 5 – Admin module,Automated (jsdom),reason required (5+ chars),Pass
+TC-0575,Day 5 – Admin module,Automated (jsdom),status unchanged after refusals,Pass
+TC-0576,Day 5 – Admin module,Automated (jsdom),remove -> withdrawn with admin flags,Pass
+TC-0577,Day 5 – Admin module,Automated (jsdom),reporter notified with the reason,Pass
+TC-0578,Day 5 – Admin module,Automated (jsdom),removed report is hidden from search,Pass
+TC-0579,Day 5 – Admin module,Automated (jsdom),can't remove twice,Pass
+TC-0580,Day 5 – Admin module,Automated (jsdom),restore puts it back to open and clears the flags,Pass
+TC-0581,Day 5 – Admin module,Automated (jsdom),reporter told it is back,Pass
+TC-0582,Day 5 – Admin module,Automated (jsdom),can't restore an open report,Pass
+TC-0583,Day 5 – Admin module,Automated (jsdom),a report the owner withdrew can't be restored by an admin,Pass
+TC-0584,Day 5 – Admin module,Automated (jsdom),claimed reports can't be removed,Pass
+TC-0585,Day 5 – Admin module,Automated (jsdom),found item with a live claim can't be removed,Pass
+TC-0586,Day 5 – Admin module,Automated (jsdom),setup: both matched,Pass
+TC-0587,Day 5 – Admin module,Automated (jsdom),removing one side frees the other (matched -> open),Pass
+TC-0588,Day 5 – Admin module,Automated (jsdom),quota error reported and nothing half-saved,Pass
+TC-0589,Day 5 – Admin module,Automated (jsdom),no records before the first sync,Pass
+TC-0590,Day 5 – Admin module,Automated (jsdom),"one suggestion for the seeded wallet pair, fresh score + reasons",Pass
+TC-0591,Day 5 – Admin module,Automated (jsdom),only admins can decide,Pass
+TC-0592,Day 5 – Admin module,Automated (jsdom),unknown match,Pass
+TC-0593,Day 5 – Admin module,Automated (jsdom),a suggestion can't be 'reopened',Pass
+TC-0594,Day 5 – Admin module,Automated (jsdom),"confirm ok, both reports 'matched'",Pass
+TC-0595,Day 5 – Admin module,Automated (jsdom),record confirmed with who/when,Pass
+TC-0596,Day 5 – Admin module,Automated (jsdom),"lost-report owner notified, link to the found item",Pass
+TC-0597,Day 5 – Admin module,Automated (jsdom),finder notified,Pass
+TC-0598,Day 5 – Admin module,Automated (jsdom),PRIVACY: notifications never name or contact the other person,Pass
+TC-0599,Day 5 – Admin module,Automated (jsdom),state is 'confirmed' in the rows,Pass
+TC-0600,Day 5 – Admin module,Automated (jsdom),can't confirm twice,Pass
+TC-0601,Day 5 – Admin module,Automated (jsdom),a confirmed match can't be dismissed,Pass
+TC-0602,Day 5 – Admin module,Automated (jsdom),matched items are still claimable and still searchable,Pass
+TC-0603,Day 5 – Admin module,Automated (jsdom),"undo confirmed -> suggested, items back to open",Pass
+TC-0604,Day 5 – Admin module,Automated (jsdom),dismiss ok,Pass
+TC-0605,Day 5 – Admin module,Automated (jsdom),dismissed pairs are never suggested again,Pass
+TC-0606,Day 5 – Admin module,Automated (jsdom),restore a dismissed match,Pass
+TC-0607,Day 5 – Admin module,Automated (jsdom),suggestion with a withdrawn report becomes 'closed' and can't be confirmed,Pass
+TC-0608,Day 5 – Admin module,Automated (jsdom),claiming a matched item works,Pass
+TC-0609,Day 5 – Admin module,Automated (jsdom),"approval -> items claimed, match stays confirmed",Pass
+TC-0610,Day 5 – Admin module,Automated (jsdom),REGRESSION: one hand-over counts as ONE returned item even with a linked lost report,Pass
+TC-0611,Day 5 – Admin module,Automated (jsdom),a claimed match can't be undone,Pass
+TC-0612,Day 5 – Admin module,Automated (jsdom),"it still shows as confirmed (success), not closed",Pass
+TC-0613,Day 5 – Admin module,Automated (jsdom),lost ref must be a lost report,Pass
+TC-0614,Day 5 – Admin module,Automated (jsdom),found ref must be a found report,Pass
+TC-0615,Day 5 – Admin module,Automated (jsdom),same reporter on both sides refused,Pass
+TC-0616,Day 5 – Admin module,Automated (jsdom),link ok even though the scorer didn't suggest it,Pass
+TC-0617,Day 5 – Admin module,Automated (jsdom),both reporters notified,Pass
+TC-0618,Day 5 – Admin module,Automated (jsdom),already matched refused,Pass
+TC-0619,Day 5 – Admin module,Automated (jsdom),a report that is no longer open can't be linked,Pass
+TC-0620,Day 5 – Admin module,Automated (jsdom),linking an existing suggestion reuses its record,Pass
+TC-0621,Day 5 – Admin module,Automated (jsdom),quota error rolls the match back too,Pass
+TC-0622,Day 5 – Admin module,Automated (jsdom),place: same,Pass
+TC-0623,Day 5 – Admin module,Automated (jsdom),date: 1 day apart is good,Pass
+TC-0624,Day 5 – Admin module,Automated (jsdom),private marks: 2+ shared words is good and names them,Pass
+TC-0625,Day 5 – Admin module,Automated (jsdom),description overlap with the public listing,Pass
+TC-0626,Day 5 – Admin module,Automated (jsdom),linked lost report score,Pass
+TC-0627,Day 5 – Admin module,Automated (jsdom),no rivals / no history yet,Pass
+TC-0628,Day 5 – Admin module,Automated (jsdom),place: different is a warning with both places,Pass
+TC-0629,Day 5 – Admin module,Automated (jsdom),date: 29 days apart is a warning,Pass
+TC-0630,Day 5 – Admin module,Automated (jsdom),private marks: nothing in common is a warning,Pass
+TC-0631,Day 5 – Admin module,Automated (jsdom),description: nothing in common is a warning,Pass
+TC-0632,Day 5 – Admin module,Automated (jsdom),no linked report is mentioned,Pass
+TC-0633,Day 5 – Admin module,Automated (jsdom),rival claims are flagged,Pass
+TC-0634,Day 5 – Admin module,Automated (jsdom),earlier rejections are flagged,Pass
+TC-0635,Day 5 – Admin module,Automated (jsdom),no private marks recorded -> suggests asking a question,Pass
+TC-0636,Day 5 – Admin module,Automated (jsdom),a claim whose item was removed gives no hints,Pass
+TC-0637,Day 5 – Admin module,Automated (jsdom),only admins,Pass
+TC-0638,Day 5 – Admin module,Automated (jsdom),unknown user / status,Pass
+TC-0639,Day 5 – Admin module,Automated (jsdom),admin accounts are protected,Pass
+TC-0640,Day 5 – Admin module,Automated (jsdom),same status refused,Pass
+TC-0641,Day 5 – Admin module,Automated (jsdom),setup: student signed in,Pass
+TC-0642,Day 5 – Admin module,Automated (jsdom),disable ok,Pass
+TC-0643,Day 5 – Admin module,Automated (jsdom),disabled user is signed out on the next page,Pass
+TC-0644,Day 5 – Admin module,Automated (jsdom),disabled user cannot log in,Pass
+TC-0645,Day 5 – Admin module,Automated (jsdom),"enable ok, login works again",Pass
+TC-0646,Day 5 – Admin module,Automated (jsdom),user summary counts reports and claims,Pass
+TC-0647,Day 5 – Admin module,Automated (jsdom),"plain rows, CRLF line breaks, everything quoted",Pass
+TC-0648,Day 5 – Admin module,Automated (jsdom),quotes are doubled,Pass
+TC-0649,Day 5 – Admin module,Automated (jsdom),commas and newlines stay inside the cell,Pass
+TC-0650,Day 5 – Admin module,Automated (jsdom),formula injection is neutralised,Pass
+TC-0651,Day 5 – Admin module,Automated (jsdom),null / undefined become empty,Pass
+TC-0652,Day 5 – Admin module,Automated (jsdom),daysBetween never negative,Pass
+TC-0653,Day 5 – Admin module,Automated (jsdom),ui.query reads the address bar,Pass
+TC-0654,Day 5 – Admin module,Automated (jsdom),ui.setQuery drops empty values,Pass
+TC-0655,Day 5 – Admin module,Automated (jsdom),greeting,Pass
+TC-0656,Day 5 – Admin module,Automated (jsdom),KPIs,Pass
+TC-0657,Day 5 – Admin module,Automated (jsdom),"attention: review, waiting for reply, matches (no 'approved' row)",Pass
+TC-0658,Day 5 – Admin module,Automated (jsdom),attention links,Pass
+TC-0659,Day 5 – Admin module,Automated (jsdom),three charts drawn,Pass
+TC-0660,Day 5 – Admin module,Automated (jsdom),"category chart: horizontal bars, lost coral / found blue, every category listed",Pass
+TC-0661,Day 5 – Admin module,Automated (jsdom),"daily chart: line, 14 points per series, same colours",Pass
+TC-0662,Day 5 – Admin module,Automated (jsdom),"claims chart: single series, legend hidden, one bar per status",Pass
+TC-0663,Day 5 – Admin module,Automated (jsdom),integer axes,Pass
+TC-0664,Day 5 – Admin module,Automated (jsdom),each canvas has a text alternative and a table view,Pass
+TC-0665,Day 5 – Admin module,Automated (jsdom),category table lists every category,Pass
+TC-0666,Day 5 – Admin module,Automated (jsdom),days table has 14 rows,Pass
+TC-0667,Day 5 – Admin module,Automated (jsdom),claims table,Pass
+TC-0668,Day 5 – Admin module,Automated (jsdom),return rate tile,Pass
+TC-0669,Day 5 – Admin module,Automated (jsdom),latest reports (6 rows),Pass
+TC-0670,Day 5 – Admin module,Automated (jsdom),no script errors,Pass
+TC-0671,Day 5 – Admin module,Automated (jsdom),without Chart.js: friendly message and tables still there,Pass
+TC-0672,Day 5 – Admin module,Automated (jsdom),no data: 'No data yet' instead of empty charts,Pass
+TC-0673,Day 5 – Admin module,Automated (jsdom),a chart that throws degrades to a message,Pass
+TC-0674,Day 5 – Admin module,Automated (jsdom),menu highlights Lost Reports,Pass
+TC-0675,Day 5 – Admin module,Automated (jsdom),"only lost reports, newest first",Pass
+TC-0676,Day 5 – Admin module,Automated (jsdom),count line,Pass
+TC-0677,Day 5 – Admin module,Automated (jsdom),status tabs with counts,Pass
+TC-0678,Day 5 – Admin module,Automated (jsdom),categories filled,Pass
+TC-0679,Day 5 – Admin module,Automated (jsdom),"row shows title, place, date, reporter and status",Pass
+TC-0680,Day 5 – Admin module,Automated (jsdom),search finds by title,Pass
+TC-0681,Day 5 – Admin module,Automated (jsdom),search is written into the address bar,Pass
+TC-0682,Day 5 – Admin module,Automated (jsdom),no matches -> empty state and the table is hidden,Pass
+TC-0683,Day 5 – Admin module,Automated (jsdom),search by reporter name,Pass
+TC-0684,Day 5 – Admin module,Automated (jsdom),category filter,Pass
+TC-0685,Day 5 – Admin module,Automated (jsdom),status tab with nothing in it,Pass
+TC-0686,Day 5 – Admin module,Automated (jsdom),details expand in place,Pass
+TC-0687,Day 5 – Admin module,Automated (jsdom),admin sees contact info + private marks label,Pass
+TC-0688,Day 5 – Admin module,Automated (jsdom),related info,Pass
+TC-0689,Day 5 – Admin module,Automated (jsdom),and collapse again,Pass
+TC-0690,Day 5 – Admin module,Automated (jsdom),removing without a reason shows an inline error,Pass
+TC-0691,Day 5 – Admin module,Automated (jsdom),"removal works, toast shown, list refreshes",Pass
+TC-0692,Day 5 – Admin module,Automated (jsdom),reporter was notified,Pass
+TC-0693,Day 5 – Admin module,Automated (jsdom),removed report shows the reason and a restore button,Pass
+TC-0694,Day 5 – Admin module,Automated (jsdom),restore works,Pass
+TC-0695,Day 5 – Admin module,Automated (jsdom),no script errors,Pass
+TC-0696,Day 5 – Admin module,Automated (jsdom),export uses the current filter and is spreadsheet-safe,Pass
+TC-0697,Day 5 – Admin module,Automated (jsdom),export has no contact details,Pass
+TC-0698,Day 5 – Admin module,Automated (jsdom),found page: ?status=open preselects the tab,Pass
+TC-0699,Day 5 – Admin module,Automated (jsdom),found page shows only found reports,Pass
+TC-0700,Day 5 – Admin module,Automated (jsdom),found details: kept-at + claims list with a link and status,Pass
+TC-0701,Day 5 – Admin module,Automated (jsdom),found item with a claim can't be removed,Pass
+TC-0702,Day 5 – Admin module,Automated (jsdom),paging: 10 rows + 'Show more',Pass
+TC-0703,Day 5 – Admin module,Automated (jsdom),show more reveals the rest and hides the button,Pass
+TC-0704,Day 5 – Admin module,Automated (jsdom),XSS in a report title is inert,Pass
+TC-0705,Day 5 – Admin module,Automated (jsdom),tab filter resets paging,Pass
+TC-0706,Day 5 – Admin module,Automated (jsdom),page syncs suggestions on load,Pass
+TC-0707,Day 5 – Admin module,Automated (jsdom),tabs & counts,Pass
+TC-0708,Day 5 – Admin module,Automated (jsdom),"card: score, tier, both reports side by side",Pass
+TC-0709,Day 5 – Admin module,Automated (jsdom),admin sees private marks (escaped) and where it's kept,Pass
+TC-0710,Day 5 – Admin module,Automated (jsdom),reasons listed,Pass
+TC-0711,Day 5 – Admin module,Automated (jsdom),actions: confirm + dismiss,Pass
+TC-0712,Day 5 – Admin module,Automated (jsdom),manual link lists only open reports,Pass
+TC-0713,Day 5 – Admin module,Automated (jsdom),"confirm: toast, card moves to Confirmed",Pass
+TC-0714,Day 5 – Admin module,Automated (jsdom),…and both reporters were notified,Pass
+TC-0715,Day 5 – Admin module,Automated (jsdom),confirmed tab shows an Undo button,Pass
+TC-0716,Day 5 – Admin module,Automated (jsdom),undo moves it back,Pass
+TC-0717,Day 5 – Admin module,Automated (jsdom),dismissed tab offers 'Restore as suggestion',Pass
+TC-0718,Day 5 – Admin module,Automated (jsdom),restore -> back in suggested,Pass
+TC-0719,Day 5 – Admin module,Automated (jsdom),'Refresh suggestions' finds the new pair,Pass
+TC-0720,Day 5 – Admin module,Automated (jsdom),…and says so when there is nothing new,Pass
+TC-0721,Day 5 – Admin module,Automated (jsdom),"closed tab explains itself, no actions",Pass
+TC-0722,Day 5 – Admin module,Automated (jsdom),link form: needs both reports,Pass
+TC-0723,Day 5 – Admin module,Automated (jsdom),link form: links and opens the Confirmed tab,Pass
+TC-0724,Day 5 – Admin module,Automated (jsdom),no script errors,Pass
+TC-0725,Day 5 – Admin module,Automated (jsdom),"?tab= picks the tab, empty state text",Pass
+TC-0726,Day 5 – Admin module,Automated (jsdom),defaults to 'Needs review' when something is pending,Pass
+TC-0727,Day 5 – Admin module,Automated (jsdom),tab counts,Pass
+TC-0728,Day 5 – Admin module,Automated (jsdom),"row: item, claimant, status, review link",Pass
+TC-0729,Day 5 – Admin module,Automated (jsdom),"All tab, most recently updated first",Pass
+TC-0730,Day 5 – Admin module,Automated (jsdom),search by claimant,Pass
+TC-0731,Day 5 – Admin module,Automated (jsdom),search by claimant name,Pass
+TC-0732,Day 5 – Admin module,Automated (jsdom),search by item,Pass
+TC-0733,Day 5 – Admin module,Automated (jsdom),no script errors,Pass
+TC-0734,Day 5 – Admin module,Automated (jsdom),?status= preselects the tab,Pass
+TC-0735,Day 5 – Admin module,Automated (jsdom),no claims at all -> All tab + helpful message,Pass
+TC-0736,Day 5 – Admin module,Automated (jsdom),empty 'Needs review' says nothing is waiting,Pass
+TC-0737,Day 5 – Admin module,Automated (jsdom),menu highlights Claims & Verification,Pass
+TC-0738,Day 5 – Admin module,Automated (jsdom),"header: ref, status, item",Pass
+TC-0739,Day 5 – Admin module,Automated (jsdom),tracker present,Pass
+TC-0740,Day 5 – Admin module,Automated (jsdom),side-by-side: claimant's answers vs finder's private record,Pass
+TC-0741,Day 5 – Admin module,Automated (jsdom),XSS in claimant text is inert,Pass
+TC-0742,Day 5 – Admin module,Automated (jsdom),quick checks with text labels (not colour alone),Pass
+TC-0743,Day 5 – Admin module,Automated (jsdom),claimant card for admin: contact + ID,Pass
+TC-0744,Day 5 – Admin module,Automated (jsdom),activity timeline,Pass
+TC-0745,Day 5 – Admin module,Automated (jsdom),decision buttons for a pending claim,Pass
+TC-0746,Day 5 – Admin module,Automated (jsdom),"ask for info without a note -> inline message, status unchanged",Pass
+TC-0747,Day 5 – Admin module,Automated (jsdom),reject without a reason -> inline message,Pass
+TC-0748,Day 5 – Admin module,Automated (jsdom),"ask for info works: status, notification, toast, waiting banner, no 'ask' button",Pass
+TC-0749,Day 5 – Admin module,Automated (jsdom),the timeline gained the question,Pass
+TC-0750,Day 5 – Admin module,Automated (jsdom),"approve asks first, mentioning claims that will close; cancelling changes nothing",Pass
+TC-0751,Day 5 – Admin module,Automated (jsdom),"approve: claim approved, rival rejected, item claimed",Pass
+TC-0752,Day 5 – Admin module,Automated (jsdom),now offers 'Mark as returned' and where to collect,Pass
+TC-0753,Day 5 – Admin module,Automated (jsdom),return asks first,Pass
+TC-0754,Day 5 – Admin module,Automated (jsdom),"returned: read-only decision card, all steps done",Pass
+TC-0755,Day 5 – Admin module,Automated (jsdom),claimant got the return notice,Pass
+TC-0756,Day 5 – Admin module,Automated (jsdom),no script errors,Pass
+TC-0757,Day 5 – Admin module,Automated (jsdom),"reject: status, claimant notified with the reason",Pass
+TC-0758,Day 5 – Admin module,Automated (jsdom),unknown claim -> friendly page,Pass
+TC-0759,Day 5 – Admin module,Automated (jsdom),claim reference works as id,Pass
+TC-0760,Day 5 – Admin module,Automated (jsdom),a student can't open the verification page,Pass
+TC-0761,Day 5 – Admin module,Automated (jsdom),empty state,Pass
+TC-0762,Day 5 – Admin module,Automated (jsdom),only returned claims are listed (approved-but-not-handed-over is not),Pass
+TC-0763,Day 5 – Admin module,Automated (jsdom),"stat tiles: total, this month, average days, rate",Pass
+TC-0764,Day 5 – Admin module,Automated (jsdom),"row: item, owner, finder, date, days",Pass
+TC-0765,Day 5 – Admin module,Automated (jsdom),search,Pass
+TC-0766,Day 5 – Admin module,Automated (jsdom),"CSV export: header + 2 rows, reference + names, no contact details",Pass
+TC-0767,Day 5 – Admin module,Automated (jsdom),no script errors,Pass
+TC-0768,Day 5 – Admin module,Automated (jsdom),"5 users, admin last",Pass
+TC-0769,Day 5 – Admin module,Automated (jsdom),role tabs with counts,Pass
+TC-0770,Day 5 – Admin module,Automated (jsdom),"row: id, email, contact, activity, status",Pass
+TC-0771,Day 5 – Admin module,Automated (jsdom),"admin row has no button, and says 'You'",Pass
+TC-0772,Day 5 – Admin module,Automated (jsdom),role filter,Pass
+TC-0773,Day 5 – Admin module,Automated (jsdom),search by ID number,Pass
+TC-0774,Day 5 – Admin module,Automated (jsdom),search by name,Pass
+TC-0775,Day 5 – Admin module,Automated (jsdom),cancelling the confirm changes nothing,Pass
+TC-0776,Day 5 – Admin module,Automated (jsdom),"disable: status, badge, dimmed row, 'Enable' button, toast",Pass
+TC-0777,Day 5 – Admin module,Automated (jsdom),status filter,Pass
+TC-0778,Day 5 – Admin module,Automated (jsdom),enable again,Pass
+TC-0779,Day 5 – Admin module,Automated (jsdom),no script errors,Pass
+TC-0780,Day 5 – Admin module,Automated (jsdom),XSS in a user's name is inert,Pass
+TC-0781,Day 5 – Admin module,Automated (jsdom),filters restored from the address bar,Pass
+TC-0782,Day 5 – Admin module,Automated (jsdom),dashboard: signed-out and student are both turned away,Pass
+TC-0783,Day 5 – Admin module,Automated (jsdom),lost-reports: signed-out and student are both turned away,Pass
+TC-0784,Day 5 – Admin module,Automated (jsdom),found-reports: signed-out and student are both turned away,Pass
+TC-0785,Day 5 – Admin module,Automated (jsdom),matches: signed-out and student are both turned away,Pass
+TC-0786,Day 5 – Admin module,Automated (jsdom),claims: signed-out and student are both turned away,Pass
+TC-0787,Day 5 – Admin module,Automated (jsdom),verify-claim: signed-out and student are both turned away,Pass
+TC-0788,Day 5 – Admin module,Automated (jsdom),returned-items: signed-out and student are both turned away,Pass
+TC-0789,Day 5 – Admin module,Automated (jsdom),users: signed-out and student are both turned away,Pass
+TC-0790,Day 5 – Admin module,Automated (jsdom),(a disabled admin is turned away too),Pass
+TC-0791,Day 5 – Admin module,Automated (jsdom),all Day 5 files exist,Pass
+TC-0792,Day 5 – Admin module,Automated (jsdom),Chart.js is bundled locally (works offline),Pass
+TC-0793,Day 5 – Admin module,Automated (jsdom),no broken script/style references in 8 admin pages,Pass
+TC-0794,Day 5 – Admin module,Automated (jsdom),no 'Coming on Day' placeholders left in the admin area,Pass
+TC-0795,Day 5 – Admin module,Automated (jsdom),"script order: admin.js before layout.js, page script last",Pass
+TC-0796,Day 5 – Admin module,Automated (jsdom),verify-claim keeps 'Claims & Verification' active in the sidebar,Pass
+TC-0797,Profile and password,Automated (jsdom),"shows details, email/role locked",Pass
+TC-0798,Profile and password,Automated (jsdom),activity tiles,Pass
+TC-0799,Profile and password,Automated (jsdom),"invalid details -> 3 field errors + alert, nothing saved",Pass
+TC-0800,Profile and password,Automated (jsdom),"valid save trims + normalises, toast, errors cleared",Pass
+TC-0801,Profile and password,Automated (jsdom),email and role untouched,Pass
+TC-0802,Profile and password,Automated (jsdom),password form flags current/new/confirm,Pass
+TC-0803,Profile and password,Automated (jsdom),same password refused,Pass
+TC-0804,Profile and password,Automated (jsdom),"password changed, form reset",Pass
+TC-0805,Profile and password,Automated (jsdom),XSS in name stays text,Pass
+TC-0806,Profile and password,Automated (jsdom),hostile name renders inert on the profile page,Pass
+TC-0807,Profile and password,Automated (jsdom),signed-out redirected,Pass
+TC-0808,Profile and password,Automated (jsdom),admin redirected to dashboard,Pass
+TC-0809,Profile and password,Automated (jsdom),faculty sees 'Employee ID number',Pass
+TC-0810,Profile and password,Automated (jsdom),no script errors,Pass
+TC-0811,Sample data loader,Automated (jsdom),adds 14 reports,Pass
+TC-0812,Sample data loader,Automated (jsdom),item count,Pass
+TC-0813,Sample data loader,Automated (jsdom),4 claims: 4,Pass
+TC-0814,Sample data loader,Automated (jsdom),"claim states: approved,needs_info,pending,returned",Pass
+TC-0815,Sample data loader,Automated (jsdom),second press refused,Pass
+TC-0816,Sample data loader,Automated (jsdom),non-admin refused,Pass
+TC-0817,Sample data loader,Automated (jsdom),chart has data,Pass
+TC-0818,End-to-end journey,Automated (Chromium),1. registration signs Ana in and lands on the home page,Pass
+TC-0819,End-to-end journey,Automated (Chromium),2. lost report filed with a reference,Pass
+TC-0820,End-to-end journey,Automated (Chromium),3. guard files a found report,Pass
+TC-0821,End-to-end journey,Automated (Chromium),3b. the guard's own page shows the possible match to the lost report,Pass
+TC-0822,End-to-end journey,Automated (Chromium),4. Ana's bell shows 1 unread (match alert),Pass
+TC-0823,End-to-end journey,Automated (Chromium),4b. the alert names the match and links to it,Pass
+TC-0824,End-to-end journey,Automated (Chromium),5. admin sees the suggestion,Pass
+TC-0825,End-to-end journey,Automated (Chromium),5b. confirmed -> moves to the Confirmed tab,Pass
+TC-0826,End-to-end journey,Automated (Chromium),6. Ana got 'Match confirmed' too,Pass
+TC-0827,End-to-end journey,Automated (Chromium),6b. claim form auto-links Ana's lost report,Pass
+TC-0828,End-to-end journey,Automated (Chromium),"6c. claim submitted (CLM-0001, pending)",Pass
+TC-0829,End-to-end journey,Automated (Chromium),7. claim is in the admin queue,Pass
+TC-0830,End-to-end journey,Automated (Chromium),7b. quick checks flag the initials overlap,Pass
+TC-0831,End-to-end journey,Automated (Chromium),7c. info requested,Pass
+TC-0832,End-to-end journey,Automated (Chromium),7d. Ana sees the question and a reply form,Pass
+TC-0833,End-to-end journey,Automated (Chromium),"7e. reply sent, claim back to pending",Pass
+TC-0834,End-to-end journey,Automated (Chromium),7f. approved,Pass
+TC-0835,End-to-end journey,Automated (Chromium),"8. Ana sees the approval, pickup note and where to collect",Pass
+TC-0836,End-to-end journey,Automated (Chromium),8b. marked returned,Pass
+TC-0837,End-to-end journey,Automated (Chromium),8c. appears in Returned Items,Pass
+TC-0838,End-to-end journey,Automated (Chromium),8d. dashboard shows 1 returned,Pass
+TC-0839,End-to-end journey,Automated (Chromium),9. Ana's notification trail covers the whole story,Pass
+TC-0840,End-to-end journey,Automated (Chromium),9b. her lost report now reads Returned,Pass
+TC-0841,End-to-end journey,Automated (Chromium),no page errors during the whole journey,Pass
+TC-0842,Edge cases and hostile input,Automated (Chromium),"cf_users = garbage: search + login still render, no script errors",Pass
+TC-0843,Edge cases and hostile input,Automated (Chromium),"cf_items = garbage: search + login still render, no script errors",Pass
+TC-0844,Edge cases and hostile input,Automated (Chromium),"cf_claims = garbage: search + login still render, no script errors",Pass
+TC-0845,Edge cases and hostile input,Automated (Chromium),"cf_matches = garbage: search + login still render, no script errors",Pass
+TC-0846,Edge cases and hostile input,Automated (Chromium),"cf_notifications = garbage: search + login still render, no script errors",Pass
+TC-0847,Edge cases and hostile input,Automated (Chromium),"cf_categories = garbage: search + login still render, no script errors",Pass
+TC-0848,Edge cases and hostile input,Automated (Chromium),"cf_locations = garbage: search + login still render, no script errors",Pass
+TC-0849,Edge cases and hostile input,Automated (Chromium),"cf_counters = garbage: search + login still render, no script errors",Pass
+TC-0850,Edge cases and hostile input,Automated (Chromium),"cf_session = garbage: search + login still render, no script errors",Pass
+TC-0851,Edge cases and hostile input,Automated (Chromium),"cf_seed_version = garbage: search + login still render, no script errors",Pass
+TC-0852,Edge cases and hostile input,Automated (Chromium),"cf_items = {""a"":1} (valid JSON, wrong shape): pages survive",Pass
+TC-0853,Edge cases and hostile input,Automated (Chromium),"cf_users = ""text"" (valid JSON, wrong shape): pages survive",Pass
+TC-0854,Edge cases and hostile input,Automated (Chromium),"cf_claims = null (valid JSON, wrong shape): pages survive",Pass
+TC-0855,Edge cases and hostile input,Automated (Chromium),"cf_notifications = 42 (valid JSON, wrong shape): pages survive",Pass
+TC-0856,Edge cases and hostile input,Automated (Chromium),public pages load with localStorage blocked,Pass
+TC-0857,Edge cases and hostile input,Automated (Chromium),registering still works in memory (no crash),Pass
+TC-0858,Edge cases and hostile input,Automated (Chromium),session for a user that no longer exists is treated as signed out,Pass
+TC-0859,Edge cases and hostile input,Automated (Chromium),hostile URL is harmless: item-details.html?id=%3Cscript%3Ewindow.__x=1%3C/script%3E,Pass
+TC-0860,Edge cases and hostile input,Automated (Chromium),hostile URL is harmless: item-details.html?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Pass
+TC-0861,Edge cases and hostile input,Automated (Chromium),hostile URL is harmless: claim-form.html?item=%27%20OR%201%3D1--,Pass
+TC-0862,Edge cases and hostile input,Automated (Chromium),hostile URL is harmless: claim-details.html?id=..%2F..%2Fetc%2Fpasswd,Pass
+TC-0863,Edge cases and hostile input,Automated (Chromium),hostile URL is harmless: search.html?q=%3Cimg%20src%3Dx%20onerror%3Dwindow.__x%3D1%3E,Pass
+TC-0864,Edge cases and hostile input,Automated (Chromium),hostile URL is harmless: search.html?type=found&category=Keys&sort=oldest&page=-5,Pass
+TC-0865,Edge cases and hostile input,Automated (Chromium),hostile URL is harmless: login.html?next=javascript:alert(1),Pass
+TC-0866,Edge cases and hostile input,Automated (Chromium),hostile URL is harmless: login.html?next=//evil.test/x.html,Pass
+TC-0867,Edge cases and hostile input,Automated (Chromium),hostile URL is harmless: login.html?next=https://evil.test/a.html,Pass
+TC-0868,Edge cases and hostile input,Automated (Chromium),login ignores an unsafe ?next= and goes to the user's home,Pass
+TC-0869,Edge cases and hostile input,Automated (Chromium),an account disabled mid-session is bounced on the next page,Pass
+TC-0870,Edge cases and hostile input,Automated (Chromium),…and sees a clear message at login,Pass
+TC-0871,Edge cases and hostile input,Automated (Chromium),double-clicking Submit creates exactly ONE report,Pass
+TC-0872,Edge cases and hostile input,Automated (Chromium),"unicode, emoji and markup survive and render as text",Pass
+TC-0873,Edge cases and hostile input,Automated (Chromium),search finds it by a word in the title,Pass
+TC-0874,Edge cases and hostile input,Automated (Chromium),huge text is capped by the form (maxlength 80),Pass
+TC-0875,Edge cases and hostile input,Automated (Chromium),…and the validator rejects oversize input too (not just the form),Pass
+TC-0876,Edge cases and hostile input,Automated (Chromium),Pacific/Pago_Pago: todayStr() is the LOCAL date and the date picker agrees,Pass
+TC-0877,Edge cases and hostile input,Automated (Chromium),Pacific/Pago_Pago: a report dated today is accepted,Pass
+TC-0878,Edge cases and hostile input,Automated (Chromium),Pacific/Pago_Pago: the new report lands on TODAY in the 14-day series,Pass
+TC-0879,Edge cases and hostile input,Automated (Chromium),Pacific/Pago_Pago: no script errors,Pass
+TC-0880,Edge cases and hostile input,Automated (Chromium),Pacific/Kiritimati: todayStr() is the LOCAL date and the date picker agrees,Pass
+TC-0881,Edge cases and hostile input,Automated (Chromium),Pacific/Kiritimati: a report dated today is accepted,Pass
+TC-0882,Edge cases and hostile input,Automated (Chromium),Pacific/Kiritimati: the new report lands on TODAY in the 14-day series,Pass
+TC-0883,Edge cases and hostile input,Automated (Chromium),Pacific/Kiritimati: no script errors,Pass
+TC-0884,Edge cases and hostile input,Automated (Chromium),Asia/Manila: todayStr() is the LOCAL date and the date picker agrees,Pass
+TC-0885,Edge cases and hostile input,Automated (Chromium),Asia/Manila: a report dated today is accepted,Pass
+TC-0886,Edge cases and hostile input,Automated (Chromium),Asia/Manila: the new report lands on TODAY in the 14-day series,Pass
+TC-0887,Edge cases and hostile input,Automated (Chromium),Asia/Manila: no script errors,Pass
+TC-0888,Edge cases and hostile input,Automated (Chromium),a second tab's notification shows after reload,Pass
+TC-0889,Edge cases and hostile input,Automated (Chromium),logging out in one tab signs out the other on its next page,Pass
