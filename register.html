@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create account — CampusFind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body data-root="" data-page="register" data-area="public">
+  <div id="cf-header"></div>
+
+  <main class="auth-wrap">
+    <aside class="auth-aside">
+      <p class="eyebrow" style="color:#e9c37d">Join the community</p>
+      <h2>Help belongings find their way home.</h2>
+      <ul>
+        <li>Students, faculty, guards and maintenance staff can all register</li>
+        <li>Accurate details help administrators verify claims faster</li>
+        <li>Administrator accounts are created by the school</li>
+      </ul>
+    </aside>
+
+    <section class="auth-main">
+      <div class="auth-card">
+        <h1>Create your account</h1>
+        <p class="muted">It takes less than a minute.</p>
+
+        <div id="form-alert" class="alert" role="alert" hidden></div>
+
+        <form id="register-form" class="form" novalidate style="margin-top:18px">
+          <div class="field" id="role-field">
+            <span class="label" id="role-label">I am a…</span>
+            <div class="role-picker" id="role-picker" role="radiogroup" aria-labelledby="role-label"></div>
+            <div class="field-error" aria-live="polite"></div>
+          </div>
+
+          <div class="field">
+            <label for="name">Full name</label>
+            <input class="input" id="name" name="name" type="text" autocomplete="name" placeholder="Juan Dela Cruz" required>
+            <div class="field-error" aria-live="polite"></div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="idNumber" id="id-label">Student / employee ID</label>
+              <input class="input" id="idNumber" name="idNumber" type="text" autocomplete="off" required>
+              <div class="field-error" aria-live="polite"></div>
+            </div>
+            <div class="field">
+              <label for="contact">Mobile number</label>
+              <input class="input" id="contact" name="contact" type="tel" autocomplete="tel" placeholder="09171234567" required>
+              <div class="field-error" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <div class="field-error" aria-live="polite"></div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="password">Password</label>
+              <div class="pw-wrap">
+                <input class="input" id="password" name="password" type="password" autocomplete="new-password" required>
+                <button class="pw-toggle" type="button" aria-pressed="false">Show</button>
+              </div>
+              <div class="hint">8+ characters, with a letter and a number.</div>
+              <div class="field-error" aria-live="polite"></div>
+            </div>
+            <div class="field">
+              <label for="confirm">Confirm password</label>
+              <input class="input" id="confirm" name="confirm" type="password" autocomplete="new-password" required>
+              <div class="field-error" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <button class="btn btn-primary btn-block btn-lg" type="submit">Create account</button>
+        </form>
+
+        <p style="margin-top:18px">Already registered? <a href="login.html">Log in</a></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

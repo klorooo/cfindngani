@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search Items — CampusFind</title>
+  <meta name="description" content="Search lost and found items reported at the University of Rizal System Binangonan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body data-root="" data-page="search" data-area="public">
+  <div id="cf-header"></div>
+
+  <main class="container page">
+    <div class="page-head">
+      <div>
+        <p class="eyebrow">Find your item</p>
+        <h1>Search items</h1>
+      </div>
+      <div class="head-actions">
+        <a class="btn btn-lost" href="report-lost.html">Report lost</a>
+        <a class="btn btn-found" href="report-found.html">Report found</a>
+      </div>
+    </div>
+
+    <div id="for-you" class="for-you" hidden></div>
+
+    <form id="search-form" class="card search-card" role="search" novalidate>
+      <div class="search-bar">
+        <label class="sr-only" for="q">Search by name, colour, brand, place or reference</label>
+        <input class="input" type="search" id="q" name="q" placeholder="e.g. black wallet" autocomplete="off">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </div>
+
+      <div class="filters">
+        <div class="field">
+          <span class="label" id="type-label">Type</span>
+          <div class="tabs" role="group" aria-labelledby="type-label">
+            <button class="tab" type="button" data-type="all" aria-pressed="true">All</button>
+            <button class="tab" type="button" data-type="lost" aria-pressed="false">Lost</button>
+            <button class="tab" type="button" data-type="found" aria-pressed="false">Found</button>
+          </div>
+        </div>
+        <div class="field">
+          <label for="category">Category</label>
+          <select class="select" id="category" name="category"><option value="">Any category</option></select>
+        </div>
+        <div class="field">
+          <label for="location">Place</label>
+          <select class="select" id="location" name="location"><option value="">Any place</option></select>
+        </div>
+        <div class="field">
+          <label for="from">Date from</label>
+          <input class="input" type="date" id="from" name="from">
+        </div>
+        <div class="field">
+          <label for="to">Date to</label>
+          <input class="input" type="date" id="to" name="to">
+        </div>
+        <div class="field">
+          <label for="sort">Sort by</label>
+          <select class="select" id="sort" name="sort">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="relevance">Best match</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filters-foot">
+        <label class="check"><input type="checkbox" id="closed" name="closed"> Include claimed &amp; returned items</label>
+        <button class="btn btn-ghost btn-sm" type="button" id="clear-all">Clear filters</button>
+      </div>
+    </form>
+
+    <div class="result-bar">
+      <p id="summary" class="muted" aria-live="polite"></p>
+      <ul id="chips" class="filter-chips" aria-label="Active filters"></ul>
+    </div>
+
+    <div id="guest-note" class="alert alert-info" hidden>
+      <a href="login.html?next=search.html">Log in</a> or <a href="register.html">create an account</a> to open an item's full details and start a claim.
+    </div>
+
+    <div id="results" class="report-grid" aria-live="polite"></div>
+    <div class="load-more"><button class="btn btn-ghost" type="button" id="load-more" hidden>Show more</button></div>
+  </main>
+
+  <div id="cf-footer"></div>
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/reports.js"></script>
+  <script src="js/search-match.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusFind — Lost &amp; Found for URS Binangonan</title>
+  <meta name="description" content="Report, search, match and reclaim lost items within the University of Rizal System Binangonan community.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body data-root="" data-page="home" data-area="public">
+  <div id="cf-header"></div>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow" id="hero-eyebrow">University of Rizal System · Binangonan</p>
+          <h1>Lost it? Found it? <em>Let's get it home.</em></h1>
+          <p class="lede">CampusFind connects students, faculty and staff so lost belongings find their way back to their owners — verified by campus administrators, start to finish.</p>
+          <form class="hero-search" action="search.html" method="get" role="search">
+            <label class="sr-only" for="hero-q">Search lost and found items</label>
+            <input class="input" id="hero-q" name="q" type="search" placeholder="Search items, e.g. “umbrella” or “black wallet”" autocomplete="off">
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+          <div class="hero-cta" id="hero-cta"></div>
+        </div>
+        <aside class="hero-card" aria-label="Sample item ticket">
+          <div class="tag-row">
+            <span class="badge badge-found" style="background:rgba(79,185,143,.18);color:#7fe0b8">Found</span>
+            <span style="font-size:.85rem;color:#b9c6d2">FND-0001</span>
+          </div>
+          <h3>Black bi-fold wallet</h3>
+          <p>Found near the canteen counter and turned in to the guard house.</p>
+          <div class="ticket"><span>Canteen</span><span>Awaiting owner</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="grid grid-3" aria-label="Live statistics">
+          <div class="stat is-lost"><div class="stat-num" id="stat-lost">0</div><div class="stat-label">Items reported lost</div></div>
+          <div class="stat is-found"><div class="stat-num" id="stat-found">0</div><div class="stat-label">Items waiting to be claimed</div></div>
+          <div class="stat is-brand"><div class="stat-num" id="stat-returned">0</div><div class="stat-label">Returned to owners</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2>Three steps from lost to returned</h2>
+        </div>
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="step-num">1</div>
+            <h3>Report</h3>
+            <p class="muted">Lost something or found something? File a report with a photo, description and where it happened.</p>
+          </article>
+          <article class="card">
+            <div class="step-num">2</div>
+            <h3>Search &amp; match</h3>
+            <p class="muted">Browse the records or let CampusFind suggest likely matches based on category, place and date.</p>
+          </article>
+          <article class="card">
+            <div class="step-num">3</div>
+            <h3>Claim &amp; verify</h3>
+            <p class="muted">Submit a claim with proof of ownership. An administrator verifies it and approves the return.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Latest activity</p>
+          <h2>Recently reported</h2>
+        </div>
+        <div class="item-list" id="recent-items" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="cf-footer"></div>
+
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/reports.js"></script>
+  <script src="js/claims.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
